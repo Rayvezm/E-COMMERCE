@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.header {
+    background-color: #ffffffd1;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.nav-menu {
+    background-color: #ffffffd1;
+    display: none;
+    flex-direction: column;
+    transition: max-height 0.7s ease-in-out;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.nav__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #57441a;
+}
+
+.nav_item {
+    margin: 0;
+    color: #0e0e0e;
+    text-decoration: none;
+}
+
+.btn-menu {
+    cursor: pointer;
+}
+
+.chk-oculto__lineas {
+    display: block;
+    height: 2px;
+    width: 60%;
+    background-color: #080808;
+    margin: 4px 0;
+    transition: transform .2s ease-in-out;
+}
+
+/* Mostrar el menú al marcar la casilla */
+.checkbox:checked~.nav-menu {
+    display: flex;
+    
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+
+/* Aqui cominza el carousel que yo habia hechi XD */
+/* 
+.carousel__item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 720px; 
+} 
+
+.carousel__item img {
+    width: 100%;
+    height: auto;
+} 
+ */
+
+
+
+
+/* Presentation */
+.presentation {
+    text-align: center;
+    padding: 20px;
+}
+
+.presentation__title,
+.presentation__text {
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.presentation__image {
+    max-width: 100%;
+}
+
+/* CTA */
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta__text {
+    margin-bottom: 10px;
+}
+
+.cta__button {
+    padding: 10px 20px;
+    background-color: #c2d730;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Products */
+.products {
+    text-align: center;
+}
+
+.products__title {
+    margin: 20px 0;
+}
+
+.products__carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+/* Tarjetas de productos */
+.product-card {
+    flex: 1 0 auto;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+}
+
+
+.product-card__image {
+    max-width: 100%;
+}
+
+.product-card__button {
+    margin-top: 10px;
+    background-color: #c2d730;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Quiénes somos */
+.who-we-are {
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.who-we-are__image {
+    width: 70%;
+}
+
+.quienes-somos {
+    text-align: center;
+    align-items: center;
+    margin: 30px
+}
+
+/* Contacto */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact__image {
+    width: 70%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #57441a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* Responsive styles */
+@media (min-width: 800px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .nav__list {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    /* .presentation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex:
+    }
+
+    .presentation__image {
+        max-width: 50%;
+    } */
+
+    .presentation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .presentation__text {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .presentation__title {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .presentation__image {
+        max-width: 300px;
+        height: auto;
+    }
+
+
+    .quienes-somos {
+        display: flex;
+        align-items: center;
+        margin: 30px
+    }
+
+    .who-we-are__image {
+        max-width: 80%;
+        margin-right: 20px;
+    }
+
+    .contact {
+        flex-direction: row;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__image {
+        max-width: 80%;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-menu {
+        display: none;
+        /* Oculta el botón en pantallas grandes */
+    }
+
+    .nav-menu {
+        display: flex;
+        /* Muestra el menú siempre en pantallas grandes */
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        /* Cambia a fila en pantallas grandes */
+        width: 100%;
+        justify-content: flex-end;
+        /* Alinea elementos a la derecha */
+    }
+
+    .nav_item {
+        margin: 0 15px;
+        /* Espacio entre elementos del menú */
+    }
+}
