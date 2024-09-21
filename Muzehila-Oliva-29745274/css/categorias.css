@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/*  HEADER */
+
+.fondo{
+    height: 100px;
+    padding: 0 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: #05031e;
+    padding: 10px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li:hover{
+    transform: scale(1.1)
+}
+
+.menu .navbar ul li a{
+color: #ffffff;
+}
+
+.menu .navbar ul li a:hover{
+    color:#002be7;
+}
+
+.navbar .btnhome button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #002be7;
+    padding: 9px 15px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar .btnhome button:hover{
+    background-color: #002be7;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* CATEGORÍA FANTASÍA */
+
+.fantasiasection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.fantasiabanner {
+    background-image: url("../img/webp/ffantasia.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+.fantasiabanner h1 {
+    font-size: 100px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.fantasiabanner h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 450px;
+    line-height: 1.4;
+}
+
+.fantasiaoptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 60px;
+}
+
+.pelisf {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 15px;
+    width: 300px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.pelisf:hover {
+    transform: scale(1.05);
+    height: 570px;
+}
+
+.pelisf h3 {
+    font-size: 15px;
+    color: #05031e;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.pelisf img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1;
+    width: 240px;
+    height: 345px;
+}
+
+.pelisf p {
+    color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.pelisf:hover p  {
+    display: block;
+}
+
+.buy-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #002be7;
+    color: #fff;
+    padding: 8px 8px;
+    border: none;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 40%;
+    width: 60%;
+    height: 40px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pelisf:hover .buy-btn  {
+    display: block;
+}
+
+
+
+
+
+
+/* CATEGORÍA TERROR */
+
+
+.terrorsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.terrorbanner{
+    background-image: url("../img/webp/fterror.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+.terrorbanner h1 {
+    font-size: 100px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.terrorbanner h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+.terroroptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 60px;
+}
+
+.pelist {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 15px;
+    width: 300px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.pelist:hover {
+    transform: scale(1.05);
+    height: 570px;
+}
+
+.pelist h3 {
+    font-size: 15px;
+    color: #05031e;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.pelist img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1;
+    width: 240px;
+    height: 345px;
+}
+
+.pelist p {
+    color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+.pelist:hover p  {
+    display: block;
+}
+
+.buy-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #002be7;
+    color: #fff;
+    padding: 8px 0px;
+    border: none;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    width: 40%;
+    height: 40px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pelist:hover .buy-btn  {
+    display: block;
+}
+
+
+
+
+
+
+/* CATEGORÍA ACCIÓN */
+
+.accionsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.accionbanner {
+    background-image: url("../img/webp/faccion.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+.accionbanner h1 {
+    font-size: 100px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.accionbanner h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    max-width: 450px;
+    line-height: 1.4;
+}
+
+.accionoptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 60px;
+}
+
+.pelisa {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 15px;
+    width: 300px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.pelisa:hover {
+    transform: scale(1.05);
+    height: 570px;
+}
+
+.pelisa h3 {
+    font-size: 15px;
+    color: #05031e;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.pelisa img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1;
+    width: 240px;
+    height: 345px;
+}
+
+.pelisa p {
+    color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    display: none;
+}
+
+
+.pelisa:hover p  {
+    display: block;
+}
+
+.buy-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #002be7;
+    color: #fff;
+    padding: 8px 0px;
+    border: none;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    width: 40%;
+    height: 40px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pelisa:hover .buy-btn  {
+    display: block;
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #ffffff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 20 20px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerleft {
+    display: flex;
+    align-items: center;
+}
+
+.footerlogo {
+    height: 30px;
+}
+
+.footercenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footeritems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footeritems li {
+    display: inline;
+}
+
+.footeritems a {
+    text-decoration: none;
+    color: #002be7;
+    font-weight: 500;
+}
+
+.footerright {
+    display: flex;
+    gap: 30px;
+}
+
+.footericon {
+    display: flex;
+    align-items: center;
+}
+
+.footericon img {
+    height: 25px;
+    width: auto;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE HEADER */
+
+@media(max-width:720px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        padding: 15px;
+        top: 60;
+        left: 0;
+        right: 0;
+        background-color: #05031e;
+        display: none;
+        z-index: 1000;
+    }
+
+    .navbar .btnhome button{
+        margin-left: 0px;
+        font-weight: 700;
+        color: #002be7;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .navbar .btnhome button:hover{
+        background-color: #002be7;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/* RESPONSIVE FANTASÍA */
+
+@media (max-width: 720px) {
+    .fantasiabanner {
+        padding: 0px 50px;
+        height: 310PX;
+        margin-top: 30px;
+        background-position: left;
+    }
+
+    .fantasiabanner h1 {
+        font-size: 55px;
+        width: 80%;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .fantasiabanner h2 {
+        font-size: 12px;
+        max-width: 80%;
+        font-weight: 600;
+    }
+
+    .pelisf h3 {
+        font-weight: 800;
+
+        
+    }
+
+}
+
+/* RESPONSIVE TERROR */
+
+@media (max-width: 720px) {
+    .terrorbanner {
+        padding: 0px 50px;
+        height: 310PX;
+        margin-top: 30px;
+        background-position: left;
+    }
+
+    .terrorbanner h1 {
+        font-size: 60px;
+        width: 80%;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .terrorbanner h2 {
+        font-size: 12px;
+        max-width: 85%;
+        font-weight: 600;
+    }
+
+    .pelist h3 {
+        font-weight: 800;
+
+        
+    }
+
+}
+
+
+/* RESPONSIVE FANTASÍA */
+
+@media (max-width: 720px) {
+    .accionbanner {
+        padding: 0px 50px;
+        height: 310PX;
+        margin-top: 30px;
+        background-position: left;
+    }
+
+    .accionbanner h1 {
+        font-size: 55px;
+        width: 80%;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .accionbanner h2 {
+        font-size: 12px;
+        max-width: 80%;
+        font-weight: 600;
+    }
+
+    .pelisa h3 {
+        font-weight: 800;
+
+        
+    }
+
+}
+
+
+
+/* RESPONSIVE FOOTER*/
+
+@media (max-width: 720px) {
+
+    .footercontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footercenter {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 15;
+
+    }
+
+    .footercenter ul li a{
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .footerleft {
+        margin-bottom: 15px;
+    }
+
+}
+
+

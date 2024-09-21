@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Gothambo;
+    src: url("../fonts/Gotham-Book.ttf") format("truetype");
+}
+@font-face {
+    font-family: Gothamme;
+    src: url("../fonts/Gotham-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: Helvetica1;
+    src: url("../fonts/HelveticaNeueLTStd-Bd.otf") format("opentype");
+}

@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    min-height: 100vh;
+}
+
+/* okey por mi falta de tiempo no e podidio aberiguar el por que el body interrumpe el como se ve el footer y el header simplemente desconosco el por que no abarcan el ancho de la pantalla, en todas las demas paginas no ocurre lo mismo sera por que es menos codigo se chocan o por que ignoro alguna linea de codigo pero coo tal los footer y header de las demas paginas son las mas parecidas a lo que quiero lograr */
+
+/* lo que salio afectado la primera imagen que era tan ancha como la pantalla, el header y footer que se achicaron. */
+
+
+@font-face {
+    font-family: 'anastasia';
+    src: url(font/ANASTAS.TTF);
+    font-weight: bold;
+    font-style: bold ;
+}
+.capture {
+    font-family: 'anastasia';
+}
+
+@font-face {
+    font-family: 'broadway';
+    src: url(font/BROADW.TTF);
+    font-weight: bold;
+    font-style: bold ;
+}
+.capture {
+    font-family: 'broadway';
+}
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+header {
+    background-color: #111111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vh;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffffff;
+    color: #111111;
+    transform: scale(1.1);
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.background {
+    background-image: url('img/jpg/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .centered-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+h1 {
+    font-size: 110px;
+    color: bisque;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'broadway';
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-family: 'anastasia';
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 390px;
+    height: 580px;
+    margin: 50px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 100%;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+main barberos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.barber-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.barber-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.barber-container:hover img {
+    transform: translateX(-100%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.barber-container:hover .text-overlay {
+    opacity: 1;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.map-container {
+    width: 100%;
+    height: 800px;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 600px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    height: 580px;
+    margin: 50px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.product .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.product:hover img {
+    filter: brightness(50%);
+}
+
+.product:hover .info {
+    opacity: 1;
+}
+
+.product h2{
+    font-family: 'broadway';
+    letter-spacing: 2px;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.product p, .product button {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #b8836b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.product button:hover {
+    background-color: #b8836b;
+}
+
+
+@media (max-width: 768px) {
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 60%;
+        height: auto;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-section img{
+    width: 250px;
+}
+
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    transform: scale(1.1);
+}
+
+.footer-section img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-section img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

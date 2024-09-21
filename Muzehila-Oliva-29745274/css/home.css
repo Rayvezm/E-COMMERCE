@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+
+
+
+
+/*  HEADER */
+
+.fondo{
+    height: 100px;
+    padding: 0 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: #05031e;
+    padding: 10px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li:hover{
+    transform: scale(1.1)
+}
+
+.menu .navbar ul li a{
+color: #ffffff;
+}
+
+.menu .navbar ul li a:hover{
+    color:#002be7;
+}
+
+.navbar .btnhome button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #002be7;
+    padding: 9px 15px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar .btnhome button:hover{
+    background-color: #002be7;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+#menu{
+    display: none;
+}
+
+.menuicono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+/* HERO */
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 820px;
+    width:auto;
+    background-image: url("/img/webp/fondohero.webp"); 
+    background-color: #05031e;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px 50px;
+    margin-top: 60px;
+}
+
+.heroleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    max-width: 60%; 
+    width: 800px;
+    color: #fff;
+}
+
+.heroleft h3 {
+    font-size: 25px;
+    font-weight:600;
+    color: #849bff;
+    margin-bottom: 40px;
+}
+
+.heroleft h1 {
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 150px;
+    margin-bottom: 5px;
+}
+
+.heroleft h1 span {
+    font-size: 110px;
+    font-weight: 300;
+
+}
+
+.heroleft h2 {
+    font-size: 22px;
+    font-weight: 400;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.heroleft button {
+    padding: 15px 30px;
+    background-color: #002be7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.heroleft button:hover {
+    background-color: #849bff;
+}
+
+.heroright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heroright figure {
+    width: 400px;
+    height: 210px;
+    margin-bottom: 20px;
+
+}
+
+.heroright figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* SAGAS */
+.sagas {
+    background-color: #05031e;
+    color: #fff;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sagastop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sagasicon {
+    width: auto;
+    height: 50px;
+}
+
+.sagastitle {
+    font-size: 60px;
+    color: #00f0ff; 
+    font-weight: 700;
+}
+
+.sagasbottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px;
+}
+
+.sagasitem {
+    flex: 1;
+    max-width: 310px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Para colocar el contenido dentro de la imagen */
+}
+
+.sagasitem:hover{
+    transform: scale(1.1)
+}
+
+.sagasimage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sagascontent {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.sagascontent h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.sagascontent button {
+    padding: 10px 10px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #00176a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sagascontent button:hover {
+    background-color: #849bff;
+    color: #ffffff;
+}
+
+
+
+/* PREMIOS */
+
+.premios {
+    background-image: url(/img/webp/fondopremios.webp);
+    background-color: #05031e;
+    background-size: cover;
+    background-position: center;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.premioscontainer {
+    display: flex;
+    width: 90%;
+    max-width: 1400px;
+    height: 720px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00176a;
+    border-radius: 40px;
+    padding: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+.premiosleft {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premiosimg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+
+.premiosright {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alineado a la izquierda */
+    color: #fff;
+}
+
+.premiosright h3 {
+    font-size: 35px;
+    font-weight:600;
+    color: #849bff;
+    margin-bottom: 40px;
+}
+
+.premiosright h1 {
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 110px;
+    margin-bottom: 5px;
+}
+
+.premiosright h1 span {
+    font-weight: 600;
+    font-size:90px;
+}
+
+.premiosright h2 {
+    font-size: 22px;
+    font-weight: 400;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.btnsuscribe {
+    padding: 15px 30px;
+    background-color: #002be7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btnsuscribe:hover {
+    background-color: #849bff;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 20 20px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerleft {
+    display: flex;
+    align-items: center;
+}
+
+.footerlogo {
+    height: 30px;
+}
+
+.footercenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footeritems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footeritems li {
+    display: inline;
+}
+
+.footeritems a {
+    text-decoration: none;
+    color: #002be7;
+    font-weight: 500;
+}
+
+.footerright {
+    display: flex;
+    gap: 30px;
+}
+
+.footericon {
+    display: flex;
+    align-items: center;
+}
+
+.footericon img {
+    height: 25px;
+    width: auto;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE HEADER */
+
+@media(max-width:720px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        padding: 15px;
+        top: 60;
+        left: 0;
+        right: 0;
+        background-color: #05031e;
+        display: none;
+    }
+
+    .navbar .btnhome button{
+        margin-left: 0px;
+        font-weight: 700;
+        color: #002be7;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .navbar .btnhome button:hover{
+        background-color: #002be7;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/* RESPONSIVE HERO */
+
+@media (max-width: 1130px) {
+    .heroleft {
+        max-width: 100%;
+    }
+    
+    .heroright {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 720px) {
+    .hero {
+        flex-direction: column;
+        height:500px; 
+        padding: 0px 30px;
+        background-attachment: scroll;
+    }
+
+    .heroleft {
+        max-width: 100%; 
+    }
+
+    .heroleft h3 {
+        width: auto; 
+        font-size: 16px;
+        font-weight: 500; 
+        margin-bottom: 20px;
+    }
+
+
+    .heroleft h1 {
+        font-size: 80px;
+        line-height: 65px;
+        text-justify: distribute;
+    }
+
+    .heroleft h1 span {
+        font-size: 38px; 
+        font-weight: 600;
+        text-justify: distribute;
+    }
+
+    .heroleft h2 {
+        width: 280px; 
+        font-size: 16px; 
+    }
+
+    .heroleft h2 strong {
+        font-weight: bold; 
+        font-size: 16px;
+    }
+    .heroleft button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .heroright {
+        display: none;
+    }
+}
+
+/* RESPONSIVE SAGAS */
+
+@media (max-width: 720px) {
+    .sagas {
+        padding: 50px 20px;
+    }
+
+    .sagastop {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sagastitle {
+        font-size: 25px;
+    }
+    .sagasicon {
+        width: auto;
+        height: 30px;
+    }
+
+    .sagasbottom {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .sagasitem {
+        min-width: 100%;
+        height: 440px;
+        height: auto;
+        padding: 30px;
+    }
+
+    .sagasimage {
+        height: 440px;
+        min-height: 300px;
+        background-size: cover;
+        justify-content: flex-start;
+        align-content: flex-start;
+        border-radius: 10px;
+    }
+
+    .sagascontent {
+        bottom: 10px;
+        left: 10px;
+        padding: 40px;
+    }
+
+    .sagascontent h2 {
+        font-size: 30px;
+    }
+
+    .sagascontent button {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+/* RESPONSIVE PREMIOS */
+
+@media (max-width: 720px) {
+    .premios {
+        height: auto; 
+        padding: 30px 10px;
+        margin-top: -1px;
+    }
+    
+    .premioscontainer {
+        flex-direction: column;
+        width: 90%; 
+        height: auto;
+        gap: 20px; 
+        border-radius:30px;
+        padding: 20px;
+    }
+
+    .premiosleft {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .premiosimg {
+        width:300px;
+        height:auto ;
+        margin-bottom: 10px;
+    }
+
+    .premiosright {
+        align-items:normal; 
+        text-align: left; 
+        width: 270px;
+        padding: 10px;
+    }
+
+    .premiosright h3 {
+        width: 200; 
+        font-size: 16px;
+        font-weight: 500; 
+        margin-bottom: 20px;
+
+    }
+
+    .premiosright h1 {
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 55px;
+        text-justify: distribute;
+        margin-bottom: 15px;
+        width: auto;
+    }
+
+    .premiosright h1 span {
+        font-size: 35px;
+    }
+
+    .premiosright h2 {
+        width: 250px; 
+        font-size: 18px;
+    }
+    
+
+    .btn-suscribe {
+        font-size: 16px; 
+        width: 160px;
+        padding: 10px 20px;
+    }
+}
+
+/* RESPONSIVE FOOTER*/
+
+@media (max-width: 720px) {
+
+    .footercontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footercenter {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 15;
+
+    }
+
+    .footercenter ul li a{
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .footer {
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .footerleft {
+        margin-bottom: 15px;
+    }
+
+}

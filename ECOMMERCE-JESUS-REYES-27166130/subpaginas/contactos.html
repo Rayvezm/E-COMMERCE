@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bera contactos</title>
+        <link rel="shortcut icon" href="../img/png/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- ESTILOS PROPIOS -->
+        <link rel="stylesheet" href="../styles/style.css">
+        <!-- BOOTSTRAP STYLES -->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    </head>
+    <body class="fondo__contactos">
+        <!-- MENU DE NAVEGACION -->
+        <header class="bg-yisus position-fixed w-100">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid justify-content-end">
+                    <button
+                        class="navbar-toggler d-flex d-lg-none flex-column justify-content-center row-gap-2 py-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu__lineas"></span>
+                        <span class="menu__lineas"></span>
+                        <span class="menu__lineas"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center"
+                        id="navbarTogglerDemo02">
+                        <ul
+                            class="navbar-nav column-gap-5 align-items-center text-center">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link font__capmarvel select"
+                                    aria-current="page"
+                                    href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link font__capmarvel column"
+                                    href="#">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link font__capmarvel column"
+                                    href="../subpaginas/nosotros.html">SOBRE
+                                    NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link--active font__capmarvel"
+                                    href="./contactos.html">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- CONTACTOS Y FORMULARIO -->
+        <main class="pt-5">
+            <section
+                class="portada__redes d-flex align-items-center flex-column">
+                <header class="titulo__contactos">
+                    <h1 class="fonts__titulos">CONTACTOS</h1>
+                </header>
+                <div
+                    class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                    <article class="content__article text-center">
+                        <figure
+                            class="d-flex align-items-center justify-content-center">
+                            <img class="w-25 img__redes"
+                                src="../img/png/correo.png" alt="correo">
+                        </figure>
+                        <h6 class="fonts__titulos">VENTA@BERAVIRTUAL.COM</h6>
+                        <figure
+                            class="d-flex align-items-center justify-content-center">
+                            <img class="w-25 img__redes"
+                                src="../img/png/insta.png" alt="instagram">
+                        </figure>
+                        <h6 class="fonts__titulos">@BERAMOTORCYCLES</h6>
+                        <figure
+                            class="d-flex align-items-center justify-content-center">
+                            <img class="w-25 img__redes"
+                                src="../img/png/wsp.png" alt="wahtsapp">
+                        </figure>
+                        <h6 class="fonts__titulos">+58 (412) 3112578</h6>
+                    </article>
+                    <!-- FORMULARIO -->
+                    <article class="content__articule">
+                        <figure><img class="img__logoform"
+                                src="./img/icono-farmatodo.webp" alt></figure>
+                        <form
+                            class="content__form d-flex flex-column fonts__titulos">
+                            <label for="usuario">NOMBRE Y APELLIDO</label>
+                            <input type="text" id="nombre" name="nombre"
+                                required
+                                class="content__form-input text__input">
+                            <label for="email">CORREO ELECTRÓNICO</label>
+                            <input type="email" id="email" name="email" required
+                                class="content__form-input text__input">
+                            <label for="textarea">CONSULTA</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                required
+                                class="content__form-input form-text text__input text-white"></textarea>
+                            <button type="submit" value="ENVIAR"
+                                class="content__form-btn">ENVIAR</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+            <!-- FOOTER -->
+            <footer
+                class="footer d-flex justify-content-center align-items-center">
+                <p class="copyright text-white">Copyright © <span
+                        id="fecha"></span> - Bera
+                    Services</p>
+            </footer>
+            <!-- mi script -->
+            <script type="text/javascript" src="../js/menu.js"></script>
+            <!-- bootstrap js -->
+            <script type="text/javascript"
+                src="../bootstrap/js/bootstrap.js"></script>
+        </main>
+    </body>
+</html>

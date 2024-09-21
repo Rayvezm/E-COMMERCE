@@ -1,0 +1,429 @@
+/* ----------- Normalización básica ----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+  overflow-x: hidden;
+}
+/* ----------- Fuentes ----------- */
+
+
+/* Montserrat-Regular */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Estilos generales para el scrollbar */
+::-webkit-scrollbar {
+    width: 8px;  /* Ancho del scrollbar */
+  }
+  
+  /* Estilos de la pista del scrollbar (track) */
+  /* Scrollbar General */
+::-webkit-scrollbar {
+    width: var(--scroll-width);
+  }
+  
+  /* Estilos del track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--scroll-track-color);
+    border-radius: var(--scroll-radius); /* Bordes redondeados del track */
+  }
+  
+  /* Estilos del thumb (parte desplazable) */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: var(--scroll-radius); /* Bordes redondeados en todo el thumb */
+    border: 2px solid var(--scroll-border);
+  }
+  
+  /* Estilos del thumb cuando se pasa el cursor */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-hover-color);
+  }
+  
+  /* Otros navegadores */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+  }
+  
+  /* Bordes redondeados solo en la parte superior e inferior del thumb */
+  ::-webkit-scrollbar-thumb {
+    border-radius: var(--scroll-radius) var(--scroll-radius) 0 0; /* Parte superior redondeada */
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    border-radius: 0 0 var(--scroll-radius) var(--scroll-radius); /* Parte inferior redondeada */
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+ .header{
+   background: #1F191A;
+    margin: 0;
+    
+}
+
+.navbar {
+    background-color: #00458b00; /* Color de fondo de la barra */
+}
+
+.navbar-brand img {
+    height: 60px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilo para mantener los íconos alineados con el menú en pantallas grandes */
+.navbar-nav{
+  font-size: 2em;
+  padding: 0;
+  border-radius: 25px; /* Bordes redondeados */
+}
+.navbar-toggler{
+  border: none !important;
+  background-color: #ffffff; /* Fondo blanco */
+}
+.navbar-nav .nav-link {
+  color: #D8661F;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color:  #D8661F; /* Cambio de color en hover */
+    color: #ffffff;
+    transition: all 1.s;
+}
+.nav-link.active {
+  background:  #D8661F !important; /* Cambio de color en hover */
+  color: #ffffff !important;
+  transition: all 1.s;
+}
+.nav-link.active:hover {
+  background:  #ffffff !important; /* Cambio de color en hover */
+  color: #D8661F !important;
+  transition: all 1.s;
+}
+.icon-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.icon-section img {
+  width: 100px;
+  height: 100px;
+}
+.content-page{
+  min-height: calc(70vh - 3.6em - 3.6em);
+}
+/*sections*/
+.text-home-title {
+  font-size: 4rem;
+  text-shadow: 1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white;
+}
+.text-home-title-subtitle {
+  right: 6rem !important;
+  bottom:6rem !important;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* fonts */
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* transparencias*/
+.bg-transparent{
+    background: transparent !important;
+    border: none !important;
+}
+/* colores de texto*/
+.text-green{
+  color: #009045 !important;
+}
+.text-orange{
+  color: #D8661F !important;
+}
+/* colores de fondo*/
+.bg-orange{
+ background-color: #D8661F;
+}
+.bg-brown{
+    background: #1F191A !important;
+}
+.bg-gray{
+  background: #C5C5C5 !important;
+}
+.text-justify {
+    text-align: justify;
+  }
+
+/* radios*/
+.radio-1{
+    border-radius: 1em;
+}
+/*hv*/
+.min-vh-70{
+    min-height: 70vh !important;
+}
+.img-fluid-80{
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* interlineados*/
+.reduced-line-height {
+    line-height: 0;
+  }
+/* img */
+
+.img-cover {
+    object-fit: cover;
+  }
+.icon-service{
+  fill: #D8661F !important;
+  color: #D8661F !important;
+}
+
+  /*cards*/
+  .card-title-producto{
+    margin-bottom: 0.5rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /* Estilos personalizados */
+
+  .bg-shadow{
+    box-shadow: -7px 7px 16px 0px rgba(48, 21, 4, 0.50) !important; /* Sombra del borde */
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    text-align: center;
+}
+.card-link {
+    text-decoration: none;
+    color: #070707;
+}
+.bg-gradient-gray{
+  background: linear-gradient(226deg, rgb(223 223 223 / 70%) 33.84%, #f9f9f9 92.7%) !important;
+}
+.custom-ratio {
+  max-height: 25em; /* Ajusta según tu preferencia */
+}
+/* botones */
+.btn-rounded{
+    border-radius: 1em;
+}
+.btn-card{
+    background: #070707 !important;
+    color: #D8661F;
+}
+.form-container {
+  background-color: #D8661F;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  width: 48%;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+.carousel-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0), -1px -1px 0px rgb(0, 0, 0), 1px -1px 0px rgb(0, 0, 0), -1px 1px 0px rgb(0, 0, 0);
+}
+
+.carousel-subtitle {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0), -1px -1px 0px rgb(0, 0, 0), 1px -1px 0px rgb(0, 0, 0), -1px 1px 0px rgb(0, 0, 0);
+}
+
+.carousel-caption {
+  bottom: 10px;
+}
+
+.carousel-control-prev .fa,
+.carousel-control-next .fa {
+  color: #D8661F;
+  font-size: 2.5rem;
+}
+.footer {
+    background:linear-gradient(to right, #64CCEE, #308DC2) !important; /* Color de fondo azul claro */
+    padding: 2rem;
+}
+.btn-back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #D8661F; /* Cambia el color según tu preferencia */
+  border-color: #fff;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back-to-top:hover {
+  background-color: #e09a3b; /* Cambia el color de hover según tu preferencia */
+}
+/* Estilos mejorados para el modal */
+.modal-content {
+  border: none; /* Sin bordes */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  background: linear-gradient(145deg, #f3f3f3, #ffffff); /* Fondo degradado */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Centrar el título de la modal */
+.modal-title {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333; /* Color oscuro para el título */
+}
+
+/* Cuerpo del modal */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilo de la imagen */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Botón de compra con icono */
+.btn-buy {
+  background-color: #D8661F; /* Color de fondo */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px; /* Bordes redondeados */
+  border: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #e09a3b; /* Cambio de color en hover */
+}
+
+/* Icono de carrito de compras */
+.btn-buy .fa-shopping-cart {
+  font-size: 1.2rem;
+}
+
+
+/* medias querys*/
+
+
+/* Para pantallas extra pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+  .text-home-title-subtitle {
+    right: 2rem !important;
+    bottom: 0rem !important;
+}
+}
+   
+  
+  /* Para pantallas pequeñas (de 576px a 767.98px) */
+  @media (min-width: 576px) {
+    .text-home-title-subtitle {
+      right: 2rem !important;
+      bottom: 0rem !important;
+  }
+  .ps-9 {
+    padding-left: 2rem !important;
+  }
+  .pe-9 {
+    padding-right: 2rem !important;
+  }
+  
+} @media (max-width: 768px) {
+  
+  
+  .text-home-title {
+    font-size: 2rem;
+  }
+  }
+   
+  
+  /* Para pantallas medianas (de 768px a 991.98px) */
+  @media (min-width: 768px) {
+    /* fonts */
+    .fa-md-2x{
+      font-size: 2em;
+    }
+    
+    
+  }
+  
+  /* Para pantallas grandes (de 992px a 1199.98px) */
+  @media (min-width: 992px) {
+    .ps-9 {
+      padding-left: 9rem !important;
+    }
+    .pe-9 {
+      padding-right: 9rem !important;
+    }
+    
+  } @media (max-width: 768px) {
+    
+    
+    .text-home-title {
+      font-size: 2rem;
+    }
+  }
+   
+  
+  /* Para pantallas extra grandes (de 1200px en adelante) */
+  @media (min-width: 1200px) {
+   
+  }

@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.enlaces {
+    text-decoration: none;
+}
+
+.titulos_h2 {
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.boton_gris {
+    position: relative;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    padding: 5px 40px;
+    top: 30px;
+    border-bottom-left-radius: 20px;
+    color: #ececec;
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.boton_gris:hover{
+    background-color: #8f8f8f;
+}
+
+.boton_gris:active{
+    scale: 0.9;
+}
+
+/* cabecera */
+.cabecera {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+#div_navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    text-align: center;
+    background-color: #00000080;
+}
+
+.menu-desplegable {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 5px;
+    top: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.menu-desplegable:active {
+    opacity: 0.5;
+    transition: ease-in-out;
+}
+
+#blanco {
+    color: aliceblue;
+    font-family: bebas;
+    font-weight: 100;
+    font-size: 130%;
+}
+
+.activo {
+    font-family: bebas-bold;
+}
+
+.links {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    row-gap: 20px;
+    padding: 0 20px;
+}
+
+.contenedor_logo {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    height: 40px;
+    margin: 10px 0px ;
+}
+
+/* secction 1 */
+
+.section_1 {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-image: url("/img/webp/fondo_index.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position: center;
+    height: 100vh;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+}
+
+.contenedor_logo_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo_hero {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    max-width: 250px;
+    min-width: 100px;
+    transition: 500ms ease-in-out;
+    margin: 0;
+}
+
+.contenedor_texto_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.texto_hero {
+    font-family: montserrat;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16pt;
+    width: 80%;
+    margin: 0;
+    transition: 500ms ease-in-out;
+}
+
+.boton_blanco {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    padding: 5px 20px;
+    border-bottom-left-radius: 20px;
+    color: #101010;
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.boton_blanco:hover{
+    color: #ececec;
+    background-color: #383838;
+}
+
+.boton_blanco:active{
+    scale: 0.9;
+}
+/* secction 2 */
+
+.section_2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #4d4d4d;
+    min-height: 100vh;
+    padding: 20px 50px;
+    align-items: center;
+    color: #ececec;
+}
+
+.sobre_nosotros_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f8f8f;
+    padding: 10px 50px;
+    text-align: center;
+    width: 70%;
+    max-width: 500px;
+    min-width: 433px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 500ms ease-in-out;
+}
+
+.texto_seccion_2 {
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24pt;
+    width: 80%;
+    min-width: 20px;
+    transition: 500ms ease-in-out;
+}
+
+h6 {
+    display: flex;
+    position: absolute;
+    z-index: 20;
+}
+
+.imagenes_enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ececec;
+    
+}
+
+.imagenes_sobre_nosotros{
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.imagenes_section_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sobrenosotros_imagenes {
+    width: 100%;
+    height: 305px;
+    z-index: 30;
+}
+
+.sobrenosotros_imagenes:hover{
+    opacity: 0.5;
+    z-index: 10;
+    transition: 200ms ease-in-out;
+}
+
+.boton_blanco_2 {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    padding: 5px 20px;
+    border-bottom-left-radius: 20px;
+    color: #101010;
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* section 3 */
+
+.section_3 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    min-height: 100vh;
+    padding: 20px 50px;
+    align-items: center;
+    color: #383838;
+}
+
+.contacto_titulo_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nuestros_servicios {
+    color: #383838;
+}
+
+.cortes_de_Cabello {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44%;
+    min-width: 20%;
+}
+
+.tatuajes {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44%;
+    min-width: 20%;
+}
+
+.nuestros_servicios {
+    display: flex;
+}
+
+.titulos_servicios {
+    bottom: 15px;
+    color: #383838;
+    font-family: montserrat;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.p_servivios {
+    position: relative;
+    top: 10px;
+    font-family: montserrat;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.videos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.videos_servicios{
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+/* section 4 */
+
+.section_4 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-image: url("/img/webp/fondo_4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 50px;
+    align-items: center;
+    color: #ececec;
+}
+
+.productos_h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: #8f8f8f;
+    text-align: center;
+    width: 70%;
+    max-width: 500px;
+    min-width: 433px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.contenedor_texto_seccion_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.griseo_clothes {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 180px;
+}
+
+/* section 5 */
+
+.section_5 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #ececec;
+    height: 105vh;
+    padding: 0px 50px;
+    top: -1px;
+    align-items: center;
+    color: #4d4d4d;
+}
+
+.contacto_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    text-align: center;
+    width: 70%;
+    max-width: 500px;
+    min-width: 433px;
+    height: 100px;
+}
+
+.parrafo_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    top: 80px;
+    font-family: montserrat-mediumitalic;
+}
+
+.imagen_contacto_s5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen_contacto {
+    width: 70%;
+}
+
+.btn_contacto {
+    position: relative;
+    width: 150px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #383838;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    color: #8f8f8f;
+}
+
+a , li {
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.logo_griseo_armis_footer {
+    width: 100px;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.lista_paginas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h4_footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #8f8f8f;
+}
+
+.contenedor_iconos_ {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor_iconos_redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 15px;
+    width: 100%;
+    padding: 0;
+}
+
+.iconos_footer {
+    display: flex;
+    width: 40px;
+    gap: 20px;
+}
+
+.iconos_footer:hover{
+    scale: 1.1;
+    transition: 100ms ease-in-out;
+}
+
+.iconos_footer:active{
+    scale: 0.9;
+}
+
+.span {
+    font-family: montserrat;
+    font-weight: 100;
+    font-style: normal;
+    opacity: 0.5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.links_contenedor {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.links:hover{
+    color: #ececec;
+    transition: 100ms ease-in-out;
+}
+
+.links:active{
+    scale: 0.9;
+}
+
+@media screen and (width <=728px) {
+    .titulos_h2 {
+        font-family: montserrat;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    .logo_hero {
+        width: 100%;
+        max-width: 140px;
+        min-width: 140px;
+        transition: 500ms ease-in-out;
+    }
+
+    .texto_hero {
+        font-size: 15pt;
+        width: 90%;
+    }
+
+    .section_1 {
+        padding: 70px 20px;
+        height: 110vh;
+        transition: 500ms ease-in-out;
+    }
+
+    .sobre_nosotros_titulo {
+        width: 30%;
+        padding: 5px 10px;
+        max-width: 100px;
+        min-width: 350px;
+        height: 100px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        transition: 500ms ease-in-out;
+    }
+
+    .texto_seccion_2{
+        font-size: 20px;
+        margin: 0;
+        transition: 500ms ease-in-out;
+    }
+
+    .imagenes{
+        margin: 0;
+    }
+
+    .servicios {
+        width: 100%;
+    }
+
+    .iconos_footer{
+        width: 20px;
+    }
+}

@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.encabezado{
+    display: flex;
+    position: absolute;
+}
+.inicio{
+    background-image: url("../img/fondo-uno.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+    padding: 0 70px;
+}
+.parrafo{
+    color: #ffffff;
+    font-family: "Lato-Light";
+    margin-top: 10px;
+}
+
+
+/*style Acerca de nosotros-Chanel*/
+
+.body{
+    background-image: url("../img/fondo-dos.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    padding: 160px 20px;
+}
+.informacion-uno{
+    font-family: "Lato-Regular";
+    font-size: 180%;
+}
+.informacion-dos{
+    font-family: "Lato-Regular";
+    font-size: 200%;
+}
+.texto{
+    font-family: "Lato-Light";
+}
+
+.boton{
+    padding: 10px 10px;
+}
+/*style productos-chanel*/
+
+.body-productos{
+    background-image: url("../img/fondo-tres.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.logo-nombre{
+    display: flex;
+    justify-content: center;
+}
+.titulo-productos{
+    font-family: "Lato-Hairline";
+    font-size: 150%;
+    text-align: right;
+    margin-right: 390px;
+}
+.secciones-productos{
+    display: flex;
+    font-family: "Lato-Light";
+    color: #ffffff;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 450px;
+}
+
+/*style contactos-chanel*/
+
+.main-contactos{
+    background-image: url("../img/fondo-cuatro.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    padding: 160px 20px;
+}
+.info-uno{
+    font-family: "Lato-Regular";
+    font-size: 180%;
+}
+.info-dos{
+    font-family: "Lato-Bold";
+    font-size: 200%;
+}
+.info-tres{
+    font-family: "Lato-Light";
+    margin-top: 15px;
+}
+.informacion-contacto{
+    display: flex;
+    font-family: "Lato-Light";
+    gap: 40px;
+    margin-left: 60px;
+    flex-wrap: wrap;
+}
+.informacion-contacto__uno{
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 40px;
+    height: 180px;
+    justify-content: center;
+}
+.informacion-contacto__dos{
+    background-color: #ffffff;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 40px;
+    height: 180px;
+    justify-content: center;
+}
+.informacion-contacto__tres{
+    background-color: #ffffff;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 40px;
+    height: 250px;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    top: 90%;
+    position: fixed;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Lato-Hairline";
+    min-height: 60px;
+    width: 100%;
+}
+.footer-informacion{
+    display: flex;
+    margin: 15px 0px 0px 400px;
+    gap: 20px;
+}
+.footer-info{
+    display: flex;
+}
+.footer-bqto{
+    margin: 15px 0px 0px 20px;
+}
+
+.link--active{
+    border-bottom: 2px solid #646464 !important;
+}
+
+
+@media (width <= 768px){
+.inicio{
+    background-image: url("../img/fondo-uno-responsive.jpg");
+    text-align: center;
+}
+.body{
+    background-image: url("../img/fondo-dos-responsive.jpg");
+}
+.informacion{
+    text-align: center;
+    padding: 0px;
+    font-size: 95%;
+}
+.body-productos{
+    background-image: url("../img/fondo-tres-responsive-01.jpg");
+}
+.titulo-productos{
+    margin-right: 160px;
+}
+.secciones-productos{
+    margin-top: 520px;
+    gap: 10px;
+}
+.main-contactos{
+    background-image: url("../img/fondooo-01.jpg");
+}
+.info{
+    text-align: center;
+}
+.footer-informacion{
+    margin: 15px 0px 0px 0px;
+    gap: 5px;
+}
+
+}

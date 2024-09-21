@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bera productos</title>
+        <link rel="shortcut icon" href="../img/png/icon.png" type="image/x-icon">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- ESTILOS PROPIOS -->
+        <link rel="stylesheet" href="../styles/style.css">
+        <!-- BOOTSTRAP STYLES -->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    </head>
+    <body class="fondo__productos">
+        <!-- MENU DE NAVEGACION -->
+        <header class="bg-yisus position-fixed w-100 z-2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid justify-content-end">
+                    <button
+                        class="navbar-toggler d-flex d-lg-none flex-column justify-content-center row-gap-2 py-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu__lineas"></span>
+                        <span class="menu__lineas"></span>
+                        <span class="menu__lineas"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center"
+                        id="navbarTogglerDemo02">
+                        <ul class="navbar-nav column-gap-5 align-items-center text-center">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link font__capmarvel select"
+                                    aria-current="page"
+                                    href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link link--active font__capmarvel column"
+                                    href="#">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link font__capmarvel column"
+                                    href="../subpaginas/nosotros.html">SOBRE
+                                    NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font__capmarvel"
+                                    href="./contactos.html">CONTACTOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- SECCION DE PRODUCTOS -->
+        <main class="pt-5">
+            <section
+                class="portada__productos d-flex justify-content-center align-items-center flex-column">
+                <header>
+                    <h1 class="fonts__titulos text-center pt-5">REPUESTOS Y PARTES
+                        PARA
+                        TU MOTO</h1>
+                </header>
+                <article>
+                    <p class="fonts__parrafo text-center py-4">Encuentra una
+                        amplia
+                        selección de repuestos originales, garantizamos calidad
+                        y
+                        <br class="saltopagina"> durabilidad en cada pieza para
+                        mantener tu moto en
+                        óptimas condiciones.</p>
+                </article>
+                <!-- CARRUSEL -->
+                <main id="carouselExample" class="carousel slide w-100">
+                    <section class="carousel-inner">
+                        <article class="carousel-item active">
+                            <div class="mx-auto article__carrusel">
+                                <header>
+                                    <figure>
+                                        <img
+                                            src="../img/productos/ARBOL-DE-LEVA.jpg"
+                                            class="img__carrusel w-100"
+                                            alt="...">
+                                    </figure>
+                                    <h5 class="fonts__titulos">arbol de
+                                        leva x1</h5>
+                                        <p class="fonts__parrafo">14$</p>
+                                </header>
+                            </div>
+                        </article>
+                        <article class="carousel-item">
+                            <div class="mx-auto article__carrusel">
+                                <header>
+                                    <figure>
+                                        <img
+                                            src="../img/productos/BASE-DE-CROCHERA.jpg"
+                                            class="img__carrusel w-100"
+                                            alt="...">
+                                    </figure>
+                                    <h5 class="fonts__titulos">base de
+                                        crochera x1</h5>
+                                        <p class="fonts__parrafo">21$</p>
+                                </header>
+                            </div>
+                        </article>
+                        <article class="carousel-item">
+                            <div class="mx-auto article__carrusel">
+                                <header>
+                                    <figure>
+                                        <img
+                                            src="../img/productos/Camara-DT.png"
+                                            class="img__carrusel w-100"
+                                            alt="...">
+                                    </figure>
+                                    <h5 class="fonts__titulos">Camara DT</h5>
+                                        <p class="fonts__parrafo">21$</p>
+                                </header>
+                            </div>
+                        </article>
+                    </section>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </main>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer d-flex justify-content-center align-items-center">
+            <p class="copyright text-white">Copyright © <span id="fecha"></span>
+                - Bera
+                Services</p>
+        </footer>
+        <!-- mi script -->
+        <script type="text/javascript" src="../js/menu.js"></script>
+        <!-- bootstrap js -->
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>

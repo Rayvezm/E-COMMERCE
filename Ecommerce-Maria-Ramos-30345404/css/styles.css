@@ -1,0 +1,943 @@
+body {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.btn {
+  font-weight: 700;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #00852a; /* Color verde UAB */
+}
+
+.bg-image {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 15px;
+  color: white;
+  margin-top: 4rem;
+}
+
+.hero-content h1 {
+  font-weight: 500;
+}
+
+.hero-text-mobile {
+  font-size: 2rem;
+}
+
+.hero-text-mobile span {
+  font-size: 3rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand img {
+  height: 24px;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23006633' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  color: rgba(19, 19, 19, 0.9) !important;
+  font-weight: 500 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #026523 !important;
+  font-weight: 500 !important;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate.slideIn {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.text-uab-green {
+  color: #00852a;
+}
+
+.bg-uab-green {
+  background-color: #00852a;
+}
+
+.quick-links {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+}
+
+.bg-image-overlay {
+  background-image: url("../imagenes/enlaces-rapidos-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.quick-links .container {
+  position: relative;
+  z-index: 2;
+}
+
+.quick-links h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.quick-links ul {
+  padding-left: 0;
+}
+
+.quick-links li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.quick-links a:hover {
+  opacity: 0.8;
+}
+
+
+.metricas-section {
+  background-color: #f8f9fa; 
+}
+
+.metricas-section .display-4 {
+  font-size: 2.5rem; 
+  color: #28a745; 
+}
+
+.metricas-section p {
+  font-size: 0.9rem; 
+  line-height: 1.2;
+}
+
+/*Estudios*/
+
+.estudios-slider {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.estudios-slider-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imagenes/estudios-slider-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(
+    0.5
+  ); 
+}
+
+.estudios-slider .container {
+  position: relative;
+  z-index: 2; 
+}
+
+.estudios-slider h3,
+.estudios-slider .carousel-item h4 {
+  font-size: 1.6rem;
+  position: relative; 
+  z-index: 3; 
+  font-weight: 300;
+}
+
+.estudios-slider .carousel-item h4 {
+  font-size: 1.25rem;
+}
+
+
+.estudios-slider .carousel-control-prev,
+.estudios-slider .carousel-control-next {
+  position: static;
+  width: auto;
+  padding: 0 1rem;
+}
+
+.estudios-slider .carousel-control-prev-icon,
+.estudios-slider .carousel-control-next-icon {
+  background-size: 100% 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.estudios-slider .carousel-item .d-flex {
+  min-height: 4rem; 
+}
+
+
+.estudios-slider .carousel-item h4 {
+  margin: 0 1rem;
+}
+
+
+.reconocimiento {
+  background-color: #f8f9fa; 
+}
+
+footer .fab {
+  font-size: 2rem;
+}
+
+
+.social-icon-link {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.social-icon-link:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon-link:hover::before {
+  transform: scale(1);
+}
+
+/*Página de Estudios*/
+
+
+.estudios-navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#estudios-nav {
+  background-color: #ffffff !important;
+}
+
+.estudios-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.estudios-link:hover,
+.estudios-link.active {
+  color: #026523 !important; 
+  font-weight: 700 !important;
+}
+
+.hero-estudios {
+  position: relative;
+  height: 50vh;
+  min-height: 400px; 
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.hero-background img {
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-estudios .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-estudios .lead {
+  font-size: 1.2rem;
+}
+
+.hero-estudios h1 {
+  font-size: 2rem;
+}
+
+/* Estilos para la sección de enlaces de másteres y postgrados */
+
+.masters-links h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.masters-links .text-uab-green {
+  color: #00852a !important; /* Verde UAB */
+}
+
+.masters-links .bg-success {
+  background-color: #00852a !important;
+}
+
+.masters-links .card {
+  transition: transform 0.3s ease;
+}
+
+.masters-links .card:hover {
+  transform: translateY(-5px);
+}
+
+.masters-links .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.masters-links .card-body {
+  padding: 1rem;
+}
+
+.masters-links .card-title {
+  margin-bottom: 0;
+}
+
+.masters-links .card-text {
+  font-weight: bold;
+}
+
+.texto-descuento {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+
+/* Estilos para la sección de noticias UAB */
+.noticias-uab {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.noticias-uab .carousel-item {
+  height: 50vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.noticias-title {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Estilos para la sección de financiación */
+
+.financiacion h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 4rem !important;
+}
+
+.financiacion img {
+  max-width: 100%;
+  height: auto;
+}
+
+.financiacion p {
+  font-size: 1rem;
+  color: #00852a !important; /* Verde UAB */
+  font-weight: bold;
+}
+
+/* Página Acerca de nosotros */
+
+/* Estilos para la sección de estadísticas */
+.uab-stats,
+.uab-horario {
+  background-color: #f8f9fa;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.uab-stats h2 {
+  margin-bottom: 4rem !important;
+}
+
+.uab-stats span,
+.uab-horario span {
+  font-weight: bold;
+}
+
+.stat-number {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-description {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.btn-verde-uab {
+  background-color: #00852a !important;
+  color: #fff !important;
+  border-color: #00852a !important;
+  border-radius: 0rem !important;
+  padding: 1rem 0.5rem !important;
+  width: 100% !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-verde-uab:hover {
+  background-color: #026523 !important;
+  border-color: #026523 !important;
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de historia */
+.uab-history,
+.uab-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.history-container img,
+.info-container img {
+  object-fit: cover;
+  height: 600px;
+}
+
+.history-content,
+.info-content {
+  z-index: 1; 
+}
+
+.history-content p,
+.info-content p {
+  font-size: 1rem;
+}
+
+.mission-vision {
+  background-color: #ffffff; 
+}
+
+.mission-vision h2 {
+  color: #333; 
+}
+
+.mission-vision p {
+  font-size: 1rem;
+  color: #666; 
+  line-height: 1.6;
+  margin-bottom: 2rem !important;
+}
+
+/* Estilos para la sección de Responsabilidad Social Universitaria */
+.uab-social-responsibility {
+  position: relative;
+  overflow: hidden;
+}
+
+.responsibility-container {
+  min-height: 600px; 
+}
+
+.responsibility-container img {
+  object-fit: cover;
+  height: 600px;
+}
+
+.responsibility-content {
+  z-index: 1; 
+}
+
+.responsibility-content h2 {
+  line-height: 1.2;
+}
+
+.responsibility-content p,
+.responsibility-content a {
+  font-size: 1rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+}
+
+/* Estilos para la sección Empieza tu carrera */
+.start-career {
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.start-career p {
+  font-size: 1rem;
+}
+
+.form-control-lg {
+  font-size: 1rem;
+  border-radius: 0rem !important;
+  border: 2px solid #00852a !important;
+}
+
+.btn-success {
+  background-color: #00852a !important;
+  border-color: #00852a !important;
+}
+
+/* Estilos para la sección de Servicios y Contacto */
+
+.services-contact ul {
+  font-size: 1rem;
+  color: #666;
+}
+
+.services-contact a {
+  color: #00852a !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.services-contact a:hover {
+  color: #026523 !important;
+}
+
+/* Media query para ajustar en pantallas más pequeñas */
+@media (max-width: 576px) {
+  .estudios-slider .carousel-control-prev-icon,
+  .estudios-slider .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .estudios-slider .carousel-item h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .navbar-brand img {
+    height: 32px;
+  }
+
+  .hero-content {
+    padding: 3rem 15px;
+  }
+
+  .quick-links h2 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  .metricas-section .display-4 {
+    font-size: 3rem;
+  }
+
+  .metricas-section p {
+    font-size: 1rem;
+  }
+
+  .estudios-slider h3 {
+    font-size: 3rem;
+  }
+
+  .estudios-slider .carousel-item h4 {
+    font-size: 2.5rem;
+  }
+
+  .reconocimiento .container > div {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .reconocimiento .mb-4 {
+    margin-bottom: 0 !important;
+  }
+
+  /*Página de Estudios*/
+
+  .hero-estudios {
+    height: 40vh;
+  }
+
+  .hero-estudios h1 {
+    font-size: 4rem;
+  }
+
+  .hero-estudios .lead {
+    font-size: 1.5rem;
+  }
+
+  .additional-links .btn {
+    min-height: 100px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .financiacion {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .financiacion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 4rem !important;
+  }
+
+  .financiacion p {
+    font-size: 1rem;
+  }
+
+  footer .list-unstyled {
+    align-items: flex-end;
+    width: auto;
+  }
+
+  footer .social-icon-link {
+    padding: 0.5rem; 
+  }
+
+  /* Acerca de nosotros */
+
+  .uab-stats h2 {
+    text-align: left !important;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .stat-description {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .history-container,
+  .info-container {
+    max-height: 600px;
+  }
+
+  .history-content p,
+  .info-content p {
+    font-size: 1.5rem;
+  }
+
+  .mission-vision p {
+    font-size: 1.5rem;
+  }
+
+  .responsibility-container {
+    max-height: 800px;
+  }
+
+  .responsibility-content p,
+  .responsibility-content a {
+    font-size: 1.25rem;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+  }
+
+  .start-career p {
+    font-size: 1.5rem;
+    text-align: left !important;
+  }
+
+  .form-control-lg {
+    font-size: 1.1rem;
+  }
+
+  .services-contact ul {
+    font-size: 1rem;
+  }
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Ajustes para escritorio */
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+
+  /* Estilos para la sección hero */
+  .hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/hero.jpg");
+    background-size: cover;
+    background-position: 50% -64px;
+    filter: brightness(1);
+    background-repeat: no-repeat;
+  }
+
+  /* Estilos para el contenido del hero */
+  .hero-content {
+    text-align: right; 
+    padding-right: 15px; 
+  }
+
+  /* Ajustes para el texto del hero */
+  .hero-content h1 {
+    margin-right: -5px; 
+    font-weight: 500;
+    color: black;
+  }
+
+  .hero-content p {
+    color: black;
+  }
+
+  .hero-text-mobile {
+    font-size: 4rem;
+  }
+
+  .hero-text-mobile span {
+    font-size: 4rem;
+  }
+
+  .navbar {
+    background-color: transparent !important;
+  }
+
+  .navbar-scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-scrolled .navbar-nav .nav-link {
+    color: rgba(19, 19, 19, 0.9) !important;
+  }
+
+  .navbar-scrolled .navbar-nav .nav-link:hover,
+  .navbar-scrolled .navbar-nav .nav-link:focus {
+    color: rgba(19, 19, 19, 0.7) !important;
+  }
+
+ 
+  .navbar-brand img {
+    transition: opacity 0.3s ease;
+  }
+
+  .quick-links h2 {
+    font-size: 2.5rem;
+  }
+
+  .metricas-section .display-4 {
+    font-size: 3.5rem;
+  }
+
+  .metricas-section p {
+    font-size: 1.1rem;
+  }
+
+  .estudios-slider .carousel-item h4 {
+    font-size: 3rem;
+  }
+
+  .small {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  /*Página de Estudios*/
+
+  .estudios-link {
+    margin-left: 1rem;
+  }
+
+  .hero-estudios {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+  }
+
+  /*Enlaces*/
+
+  .masters-links h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .noticias-title {
+    font-weight: 400;
+  }
+
+  .carousel-caption h3 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Estilos adicionales */
+.btn-primary {
+  background-color: #00852a;
+  border-color: #00852a;
+}
+
+.btn-primary:hover {
+  background-color: #026523;
+  border-color: #026523;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonios-section .card {
+  border-left: 4px solid #006633;
+}
+
+.metricas-section .display-4 {
+  font-size: 2.5rem;
+}
+
+/* Optimizaciones para rendimiento */
+img {
+  max-width: 100%;
+  height: auto;
+}

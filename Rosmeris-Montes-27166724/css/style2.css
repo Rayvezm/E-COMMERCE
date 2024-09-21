@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Monserratregular;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+.checkbox{
+    display: none;
+}
+.header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.enlace{
+    background-color: black;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    @starting-style{
+        transform: translateY(-160px)
+    }
+}
+.enlace__ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 25px;
+    list-style: none;
+    width: 100%;
+    padding: 0 0 0;
+}
+.enlace__link{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+}
+.fig-logo{
+    width: 100px;
+}
+.button{
+    position: absolute;
+    z-index: 20;
+    right: 25px;
+    width: 60px;
+    height: 45px;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+}
+.button:active{
+    opacity: 0.9;
+}
+.contenido{
+    display: none;
+}
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.contenido__linea{
+    height: 2px;
+    width: 60%;
+    background-color: aliceblue;
+    position: absolute;
+    transition: transform .2s ease-in-out;
+}
+.linea--uno{
+    top: 10px;
+}
+.linea--tres{
+    bottom: 10px;
+}
+.checkbox:checked + .header .linea--uno{
+    transform: translateY(9px);
+}
+.checkbox:checked + .header .linea--dos{
+    display:none;
+}
+.checkbox:checked + .header .linea--tres{
+    transform: translateY(-9px);
+}
+.checkbox:checked ~ .enlace{
+    display: flex;
+}
+.enlace__li, .enlace__link{
+    width: 100%;
+    position: relative;
+}
+.enlace__link::after{
+    content: "";
+    background: linear-gradient(to right, transparent 15%, rgb(240, 97, 233), rgb(179, 209, 255), rgb(136, 11, 238));
+    background-position: left;
+    background-size: 600%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    transition: background-position .4s ease-in-out;
+}
+.enlace__link:hover::after{
+    background-position: right;
+    background-size: 200%;
+}
+.link--activo::after{
+    background: linear-gradient(to right, rgb(240, 97, 233), rgb(179, 209, 255), rgb(136, 11, 238));
+    background-position: left;
+    background-size: 600%;
+}
+/* sección uno */
+.sec1__fi{
+    margin: 0 0 0;
+}
+.sec1__lentes{
+    width: 100%;
+}
+/* sección dos */
+.sec2{
+    background-image: url("../img/jpg/portad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 120px;
+    width: 100%;
+    display: flex;
+}
+.sec2__art{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.sec2__h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* sección tres carrusel */
+.sec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 60px 40px 70px;
+    background-color: white;
+}
+.carousel{
+    width: 220px;
+    height: 280px;
+}
+#carouselExample_2 , #carouselExample_3, #carouselExample_1{
+    text-align: center;
+}
+#previ, #nexte{
+    filter: invert(100%);
+}
+.botoncompra a{
+    background-color: black;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+button{
+    border: none;
+}
+/* pagina nosotros */
+main{
+    background-color: black;
+}
+.anilloim__fi{
+    margin: 0 0 0;
+}
+.anilloim__foto{
+    width: 100%;
+}
+/* seccion dos */
+.mv{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+    width: 100%;
+}
+.mv__art{
+    width: 90%;
+}
+.mv__h2{
+    color: white;
+    text-align: center;
+}
+.mv__p{
+    color: white;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing: 0.1px;
+}
+/* seccion tres */
+.valores{
+    background-color: #8cb1cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 5px;
+    width: 100%;
+}
+.valores__hea2{
+    font-weight: 600;
+    text-align: center;
+}
+.valores__art{
+    width: 250px;
+}
+.valores__h2{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+.valores__p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+}
+/* pagina contacto */
+.contac{
+    background-color: #8cb1cc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 120px;
+    padding: 20px 5px;
+    width: 100%;
+}
+.contac__h3{
+    font-weight: 700;
+    text-align: left;
+    font-size: 15px;
+}
+.contac__p{
+    font-weight: 600;
+    font-size: 15px;
+}
+.iconosc__i{
+    width: 80px;
+}
+/* formulario */
+.consulta{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/jpg/formu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.consulta__art{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consulta__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 4px 4px 20px 3px rgb(45, 90, 238);
+    padding: 20px;
+    row-gap: 20px;
+    border-radius: 30px;
+    height: 400px;
+    width: 250px;;
+}
+.consulta__input{
+    padding: 10px 20px;
+    width: 100%;
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+.consulta__h2{
+    color: black;
+    font-size: 23px;
+}
+.consulta__input::placeholder{
+    color: rgb(44, 44, 44);
+}
+.input--ingresar{
+	background: #103a58;
+	border: none;
+	max-width: 110%;
+	color: white;
+	border-radius: 50px;
+}
+/* footer */
+.final{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100px;    
+    padding-top: 10px;
+}
+.final__p{
+    color: white;
+    font-size: 6px;
+    font-weight: 400;
+    text-align: center;
+}
+.final__gu{
+    width: 140px;
+}
+@media (min-width: 700px){
+    .button{
+        display: none;
+    }
+    .enlace{
+        display: flex;
+        height: 100px;
+    }
+    .enlace__ul{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        column-gap: 8px;
+    }
+    /* seccion dos */
+    .sec2{
+        background-image: url("../img/jpg/portad.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:left;
+        height: 300px;
+        width: 100%;
+    }
+    .sec2__art{
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+    }
+    .sec2__h2{
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    /* seccion tres */
+    .sec3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    /* pagina nosotros */
+    /* seccion dos */
+    .mv{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+        padding: 20px 5px;
+    }
+    .mv__art{
+        width: 40%;
+    }
+    .mv__h2{
+        color: white;
+    }
+    .mv__p{
+        color: white;
+        text-align: justify;
+        font-size: 12px;
+    }
+    #artdos{
+        padding-top: 20px;
+    }
+    .consulta__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        box-shadow: 4px 4px 20px 3px rgb(45, 90, 238);
+        padding: 20px;
+        row-gap: 20px;
+        border-radius: 30px;
+        height: 400px;
+        width: 350px;;
+    }
+    /* footer */
+    .final__p{
+        color: white;
+        font-size: 10px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .final__gu{
+        width: 200px;
+    }
+    
+}

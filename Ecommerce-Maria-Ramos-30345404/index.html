@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a la Universidad Autónoma de Barcelona - UAB Barcelona</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href='imagenes/favicon.png' />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+   <!-- Sección combinada de navbar y hero -->
+<section class="hero-section position-relative bg-uab-green">
+  <!-- Imagen de fondo -->
+  <div class="bg-image d-none d-lg-block"></div>
+  
+  <!-- Contenedor para el navbar y el contenido del hero -->
+  <div class="container-fluid h-100">    
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">    
+        <!-- Logo de la universidad -->
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/UAB-logo.png" alt="UAB Logo" id="navLogo">
+        </a>    
+        
+        
+        <!-- Botón de hamburguesa para móviles -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon text-uab-green"></span>
+        </button>
+        
+        <!-- Menú de navegación colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-4">
+              <a class="nav-link fs-4" href="estudios.html">
+                Estudios
+              </a>              
+            </li>
+            <!-- Otros elementos del menú -->
+            <li class="nav-item me-4">
+              <a class="nav-link fs-4" href="#">Vivir en el Campus</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link fs-4" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link fs-4" href="acerca-de-nosotros.html">La UAB</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="h-100">
+          <!-- Contenido del hero -->
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-7 offset-lg-3 text-center text-lg-end">
+              <div class="hero-content text-white"> 
+                <h1 class="display-2 text-uppercase hero-text-mobile">Un campus lleno de <span>experiencia</span></h1>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de enlaces rápidos con imagen de fondo -->
+      <section class="quick-links py-5 bg-image-overlay">      
+        <div class="container">
+          <div class="row">
+            <!-- Columna de Estudios -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <h3 class="display-5 fw-bold text-center text-lg-start text-white">Estudios</h3>
+              <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Grados</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Másters y Postgrados</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Doctorados</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">ECIU</a></li>
+              </ul>
+            </div>
+            
+            <!-- Columna de Investigación -->
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <h3 class="display-5 fw-bold text-center text-lg-start mb-3 text-white">Investigación</h3>
+              <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Producción científica</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Departamentos</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cifras</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Institutos</a></li>
+              </ul>
+            </div>
+            
+            <!-- Columna de Servicios -->
+            <div class="col-12 col-md-4">
+              <h3 class="display-5 fw-bold text-center text-lg-start mb-3 text-white">Servicios</h3>
+              <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Biblioteca</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Empleabilidad</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Transporte</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Informática</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tienda</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de métricas -->
+      <section class="metricas-section py-5 bg-light">
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-12 col-md-4">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                <h3 class="display-4 fw-bold text-uab-green">#175</h3>
+                <p class="mb-2">en el QS World</p>
+                <p class="mb-0">University Rankings 2025</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                <h3 class="display-4 fw-bold text-uab-green">#201-250</h3>
+                <p class="mb-2">en el THE World</p>
+                <p class="mb-0">University Rankings 2024</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100">
+                <h3 class="display-4 fw-bold text-uab-green">#78</h3>
+                <p class="mb-2">en el UI GreenMetric World</p>
+                <p class="mb-0">University Rankings 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de estudios slider -->
+      <section class="estudios-slider">
+        <!-- Imagen de fondo -->
+        <div class="estudios-slider-bg-image"></div>
+        
+        <!-- Contenido del slider -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-white text-center d-flex align-items-center flex-column">
+              <h3 class="display-4 mb-4">EXPANDE TUS CONOCIMIENTOS <br>CON NUESTROS POSTGRADOS</h3>        
+              
+              <!-- Slider de carreras -->
+              <div id="carrerasSlider" class="carousel slide h-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a class="carousel-control-prev" href="#carrerasSlider" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                      </a>
+                      <h4 class="display-5 fw-bold mx-4">
+                        <a href="#" class="text-white text-decoration-none">AGROALIMENTACIÓN</a>
+                      </h4>
+                      <a class="carousel-control-next" href="#carrerasSlider" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a class="carousel-control-prev" href="#carrerasSlider" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                      </a>
+                      <h4 class="display-5 fw-bold mx-4">
+                        <a href="#" class="text-white text-decoration-none">BIOTECNOLOGÍA</a>
+                      </h4>
+                      <a class="carousel-control-next" href="#carrerasSlider" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a class="carousel-control-prev" href="#carrerasSlider" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                      </a>
+                      <h4 class="display-5 fw-bold mx-4">
+                        <a href="#" class="text-white text-decoration-none">NEUROCIENCIAS</a>
+                      </h4>
+                      <a class="carousel-control-next" href="#carrerasSlider" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          <!-- Sección de reconocimiento -->
+      <section class="reconocimiento py-5 bg-light">
+        <div class="container py-5">
+          <!-- Contenedor principal con flexbox para alinear elementos -->
+          <div class="d-flex flex-column align-items-center text-center">
+            <!-- Columna de texto -->
+            <div class="mb-2">
+              <h3 class="mb-2">Reconocimiento <br> internacional de <br> <span class="fw-bold">la excelencia</span></h3>              
+            </div>
+            <!-- Columna de imagen -->
+            <div>
+              <img src="imagenes/research-seeklogo.png" alt="HR Excellence in Research" class="img-fluid" style="max-width: 200px;">
+              
+            </div>
+          </div>
+        </div>
+      </section>      
+    </main>
+
+    <footer class="bg-black text-white py-5">
+      <div class="container">
+        <div class="row gx-5">
+          <!-- Columna de información de la UAB -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div>
+              <!-- Logo de la UAB -->
+              <img src="imagenes/UAB-logo-footer.png" alt="UAB Logo" class="mb-3" style="max-width: 150px;">            
+              <p class="small fw-light">La UAB es una universidad joven, pública y puntera. Líder en los rankings internacionales y referente en investigación. De Barcelona, catalana e internacional. Una universidad transformadora, solidaria, diversa e igualitaria, sostenible y saludable, participativa y cultural. Y una universidad de campus, con las facultades y escuelas, los institutos de investigación y los servicios en un entorno natural donde vivir experiencias únicas.</p>
+            </div>
+          </div>
+          
+          <!-- Columna de contacto -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div>
+              <h5 class="mb-4">Contáctanos</h5>
+              <h6 class="mb-4">UABinfo - Punto de información</h6>
+              <p class="small mb-1">Plaza Cívica</p>
+              <p class="small mb-1">08193 Bellaterra</p>
+              <p class="small mb-4">(Cerdanyola del Vallès)</p>
+              <p class="small mb-4">Tel. + 34 93 581 11 11</p>
+              <p class="small fw-bold mb-1">
+                <a href="mailto:informacio@uab.cat" class="text-white text-decoration-none">informacio@uab.cat</a>
+              </p>
+              <p>
+                <a href="#" class="small text-white text-decoration-none">Movilidad y transportes</a>
+              </p>
+            </div>
+          </div>
+          
+         <!-- Columna de redes sociales -->
+          <div class="col-12 col-md-4">
+            <div>
+              <ul class="list-unstyled d-flex flex-md-column justify-content-between align-items-md-end">
+                <li class="mb-md-3"><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="mb-md-3"><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="mb-md-3"><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="mb-md-3"><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="mb-md-3"><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="text-white text-decoration-none social-icon-link"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+            
+        
+          <!-- Copyright -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="small mb-0">&copy; UAB 2024</p>
+            </div>
+          </div>        
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

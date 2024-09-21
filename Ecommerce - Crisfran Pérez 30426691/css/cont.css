@@ -1,0 +1,442 @@
+/* ESTILOS BASE */
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb1.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb2.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb3.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb4.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb5.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal';
+    src: url('../fonts/Airbnb6.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Aribnb Cereal', sans-serif;
+    font-size: 18px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 61px;
+    line-height: 71px;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+strong {
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* HEADER */
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: #ffff;
+    background: linear-gradient(to right, #D23756, #C82E64);
+}
+
+.contenedor{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 50px;
+    width: auto;
+    padding: 10px;
+}
+
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li a{
+color: #ffffff;
+}
+
+#menu{
+    display: none;
+}
+
+.menuicono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* CATEGORIAS */
+
+.contacto {
+    min-height: 820px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+    margin: 80px;
+    flex-wrap: wrap;
+}
+
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.cont1 p{
+    max-width: 430px;
+}
+
+.cont1 strong{
+    font-weight: 800;
+    color: #CD325D;
+}
+
+.rrss {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    color: #000000;
+}
+
+.rs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.rs h3 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cont2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario input , textarea{
+    font-size: 18px;
+    font-family: Airbnb Cereal;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border: none;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.formulario button {
+    font-family: Airbnb Cereal;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    background: linear-gradient(to right, #D23756, #C82E64);
+    color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+}
+
+.contacontr {
+    display: none;
+}
+
+/* FOOTER */
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000000;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h3 {
+    font-weight: 600;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 1190px) {
+
+    .contacontr {
+        display: block;
+    }
+
+    .contacontr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 50px;
+        margin: 80px;
+        flex-wrap: wrap;
+    }
+
+    .contacont {
+        display: none;
+    }
+
+    .cont2 {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 460px;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .contacontr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 20px;
+        margin: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cont1 h1 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .cont1 p {
+        font-size: 16px;
+    }
+
+    .formulario input {
+        font-size: 16px;
+    }
+
+    .formulario textarea {
+        font-size: 16px;
+    }
+
+    .rrss h3 {
+        font-size: 16px;
+    }
+
+    .rrss {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .cont1 h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+/* media query */
+
+@media (max-width: 720px) {
+    
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .footer-left {
+        margin-top: 10px;
+    }
+    
+    }
+
+
+    /* RESPONSIVE HEADER */
+
+@media(max-width:720px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: block;
+    }
+
+    .contenedor{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        padding: 15px;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #CD325D;
+        display: none;
+        font-size: 16px;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+}

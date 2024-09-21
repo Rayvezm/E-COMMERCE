@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - UAB Barcelona</title>
+    <!-- Preconexión a Google Fonts para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts (Inter) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="imagenes/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Estilos personalizados -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header con logo -->
+    <!-- Barra de navegación para la subpágina de estudios -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top estudios-navbar"
+      id="estudios-nav"
+    >
+      <div class="container">
+        <!-- Logo UAB -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="imagenes/UAB-logo.png"
+            alt="UAB Logo"
+            class="img-fluid estudios-logo"
+          />
+        </a>
+
+        <!-- Botón para menú móvil -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarEstudios"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces de navegación -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarEstudios"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link estudios-link" href="estudios.html"
+                >Estudios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link estudios-link" href="#">Vivir el campus</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link estudios-link active fw-bold"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link estudios-link" href="acerca-de-nosotros.html"
+                >La UAB</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenido principal -->
+    <main>
+      <!-- Sección hero -->
+      <section class="hero-estudios d-flex align-items-center">
+        <!-- Contenedor de la imagen de fondo -->
+        <div class="hero-background">
+          <img
+            src="imagenes/contacto/contacto-hero.jpg"
+            alt="Contacto UAB"
+            class="img-fluid w-100 h-100 object-fit-cover"
+          />
+          <!-- Overlay oscuro para mejorar la legibilidad del texto -->
+          <div class="overlay"></div>
+        </div>
+
+        <!-- Contenido del hero -->
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-md-8 col-lg-12 text-center text-lg-start text-white"
+            >
+              <h1 class="display-3 fw-light mb-3">
+                INFO <span class="fw-bold">UAB</span> <br />APUESTA POR EL
+                <span class="fw-bold">CONOCIMIENTO Y LA INNOVACIÓN</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de horario de la UAB -->
+      <section class="uab-horario py-5">
+        <div class="container">
+          <!-- Título de la sección -->
+          <h2 class="display-6 text-center text-lg-start text-uab-green">
+            HORARIO DE <span class="fw-bold">LUNES A JUEVES</span> DE 10H A 14H
+            Y DE 15H A 17H <span class="fw-bold">VIERNES</span> DE 10H A 14H
+          </h2>
+        </div>
+      </section>
+
+      <!-- Sección de Punto de Información -->
+      <section class="uab-info">
+        <!-- Contenedor con imagen de fondo y overlay -->
+        <div class="info-container position-relative">
+          <!-- Imagen de fondo -->
+          <img
+            src="imagenes/contacto/info-uab.jpg"
+            alt="Punto de Información UAB"
+            class="img-fluid w-100"
+          />
+
+          <!-- Overlay oscuro para mejorar la legibilidad del texto -->
+          <div
+            class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+          ></div>
+
+          <!-- Contenido de texto -->
+          <div
+            class="info-content position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center text-white"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-8 col-lg-12">
+                  <h2 class="display-5 mb-3">
+                    PUNTO DE <span class="fw-bold">INFORMACIÓN</span>
+                  </h2>
+                  <p class="mb-4">
+                    ESTAMOS SITUADOS EN LA PLAZA CÍVICA DEL CAMPUS DE BELLATERRA
+                    Y OFRECEMOS UN SERVICIO DE ATENCIÓN PARA ESTUDIANTES,
+                    FUTUROS ESTUDIANTES Y AL PÚBLICO EN GENERAL QUE DESEE
+                    CONTACTAR CON LA UAB
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Servicios y Contacto -->
+      <section class="services-contact py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <!-- Servicios que ofrecemos -->
+              <div class="mb-5">
+                <h4 class="mb-3 fw-bold">Servicios que ofrecemos:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">Información general de la UAB</li>
+                  <li class="mb-2">
+                    Información sobre el acceso a la Universidad (admisión y
+                    matrícula)
+                  </li>
+                  <li class="mb-2">
+                    Información sobre los estudios y servicios de la UAB
+                  </li>
+                  <li class="mb-2">
+                    Registro: presentación y registro de documentos
+                  </li>
+                  <li class="mb-2">Opina: buzón de quejas y sugerencias</li>
+                </ul>
+              </div>
+
+              <!-- Contacta con nosotros -->
+              <div>
+                <h4 class="mb-3 fw-bold">Contacta con nosotros:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    Presencialmente en la oficina situada en la Plaza Cívica del
+                    campus de Bellaterra
+                  </li>
+                  <li class="mb-2">Telefónicamente, en el +34 93 581 1111</li>
+                  <li class="mb-2">
+                    Por correo electrónico:
+                    <a
+                      href="mailto:informacio@uab.cat"
+                      class="text-decoration-none"
+                      >informacio@uab.cat</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="masters-links container py-5 mb-5">
+        <!-- Contenedor de tarjetas de enlaces -->
+        <div class="row g-4">
+          <!-- Tarjeta 1: Guía de transportes -->
+          <div class="col-md-4">
+            <a href="#" class="card h-100 text-decoration-none">
+              <img
+                src="imagenes/contacto/tarjeta-1.jpg"
+                class="card-img-top"
+                alt="GPS en vehículo"
+              />
+              <div class="card-body bg-success text-white">
+                <h3 class="card-title h5">Guía de Transportes</h3>
+                <p class="card-text h4">UAB 2023-2024</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Tarjeta 2: Plan de Movilidad -->
+          <div class="col-md-4">
+            <a href="#" class="card h-100 text-decoration-none">
+              <img
+                src="imagenes/contacto/tarjeta-2.jpg"
+                class="card-img-top"
+                alt="Campus universitario"
+              />
+              <div class="card-body bg-success text-white">
+                <h3 class="card-title h5">Plan de</h3>
+                <p class="card-text h4">MOVILIDAD</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Tarjeta 3: Movilidad Sostenible -->
+          <div class="col-md-4">
+            <a href="#" class="card h-100 text-decoration-none">
+              <img
+                src="imagenes/contacto/tarjeta-3.jpg"
+                class="card-img-top"
+                alt="Monopatines eléctricos"
+              />
+              <div class="card-body bg-success text-white">
+                <h3 class="card-title h5">Movilidad</h3>
+                <p class="card-text h4">SOSTENIBLE</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-black text-white py-5">
+      <div class="container">
+        <div class="row gx-5">
+          <!-- Columna de información de la UAB -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div>
+              <!-- Logo de la UAB -->
+              <img
+                src="imagenes/UAB-logo-footer.png"
+                alt="UAB Logo"
+                class="mb-3"
+                style="max-width: 150px"
+              />
+              <p class="small fw-light">
+                La UAB es una universidad joven, pública y puntera. Líder en los
+                rankings internacionales y referente en investigación. De
+                Barcelona, catalana e internacional. Una universidad
+                transformadora, solidaria, diversa e igualitaria, sostenible y
+                saludable, participativa y cultural. Y una universidad de
+                campus, con las facultades y escuelas, los institutos de
+                investigación y los servicios en un entorno natural donde vivir
+                experiencias únicas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna de contacto -->
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div>
+              <h5 class="mb-4">Contáctanos</h5>
+              <h6 class="mb-4">UABinfo - Punto de información</h6>
+              <p class="small mb-1">Plaza Cívica</p>
+              <p class="small mb-1">08193 Bellaterra</p>
+              <p class="small mb-4">(Cerdanyola del Vallès)</p>
+              <p class="small mb-4">Tel. + 34 93 581 11 11</p>
+              <p class="small fw-bold mb-1">
+                <a
+                  href="mailto:informacio@uab.cat"
+                  class="text-white text-decoration-none"
+                  >informacio@uab.cat</a
+                >
+              </p>
+              <p>
+                <a href="#" class="small text-white text-decoration-none"
+                  >Movilidad y transportes</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Columna de redes sociales -->
+          <div class="col-12 col-md-4">
+            <div>
+              <ul
+                class="list-unstyled d-flex flex-md-column justify-content-between align-items-md-end"
+              >
+                <li class="mb-md-3">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="mb-md-3">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-md-3">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-md-3">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-md-3">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none social-icon-link"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="small mb-0">&copy; UAB 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
