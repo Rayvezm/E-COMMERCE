@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    text-decoration: none;
+}
+/* MENU */
+#nav_bar{
+    display: flex;
+    background-color: #1E5D92;
+    z-index: 10;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+}
+.logo{
+    margin-left: 30px;
+}
+.container-fluid{
+    background-color: #1E5D92;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENIDO */
+main{
+    background-image: url("../img/c-fondo-pc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact{
+    display: flex;
+    width:  100%;
+    min-height: 65vh;
+    padding: 35px;
+}
+
+
+.content {
+    /* height: calc(188vh - 88vh); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    width: 50%;
+    max-width: 560px;
+    }  
+    
+
+.contact__titular{
+    color: #1A2E4F;
+    font-family: "poppins";
+    letter-spacing: 1px;
+    width: 100%;
+    }
+
+.contact__titular h1{
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.contact__titular p{
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.content__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    min-width: 280px;
+    width: 50%;
+    max-width: 560px;
+    height: 350px;
+    justify-content: center;
+    }
+
+.content__input {
+color: #1A2E4F;
+background: #93C6D6;
+box-shadow: 5px 5px 10px 0 #1A2E4F;
+border: none;
+border-radius: 40px;
+opacity: 70%;
+outline: none;
+padding: 5px 20px;
+width: 100%;
+font-family: "poppins";
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 1.5px;
+}
+
+.content__enviar{
+    background: linear-gradient(90deg, #0F0C29, #1E5D93 );
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* medios de comunicacion -franja azul */
+
+.comunication{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(45deg, #0F0C29, #1E5D93,#0F0C29);
+    background-size: 100% 100%;
+    height: 100px;
+    padding: 0 40px;
+}
+
+.comunication__figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    background: #1E5D92;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.iconos_redes{
+    width: 30px;
+}
+.footer_reder{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #fff;
+}
+
+.codigo_footer{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    opacity: 60%;
+}
+
+@media (width <= 990px){
+    .contact__titular h1{
+        font-size: 35px !important; 
+    }
+}

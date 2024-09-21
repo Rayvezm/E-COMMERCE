@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {font-family: "poppins";
+    width: 100%;
+}
+/* MENU */
+#nav_bar{
+    display: flex;
+    background-color: #1E5D92;
+    z-index: 10;
+    height: 56px;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+}
+.logo{
+    margin-left: 30px;
+}
+.container-fluid{
+    background-color: #1E5D92;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENIDO */
+
+main{
+    background: linear-gradient(90deg, #95C8D8, #D5E5EC);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.planes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 136px);
+    gap: 30px;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+
+.sabores__tarjetas {
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    background: #1E5D92;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.iconos_redes{
+    width: 30px;
+}
+.footer_reder{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #fff;
+}
+
+.codigo_footer{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    opacity: 60%;
+}
+
+
