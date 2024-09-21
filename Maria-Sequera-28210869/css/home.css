@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {font-family: "poppins";
+    width: 100%;
+}
+/* MENU */
+#nav_bar{
+    display: flex;
+    background-color: #1E5D92;
+    z-index: 10;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+}
+.logo{
+    margin-left: 30px;
+}
+.container-fluid{
+    background-color: #1E5D92;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+
+  /* Estilos del Hero */
+.hero {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    /* modificar y exportar imagen */
+    background: url("../img/h-fondo-pc\ \(Mediana\).png") no-repeat center center/cover;
+    /* padding: 20px; */
+    gap: 20px;
+    /* position: relative */
+}
+
+/* Contenedor del texto en PNG y los botones */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    /* margin-bottom: 50px; */
+    color: #1A2E4F;
+}
+
+.hero h1{
+    font-family: poppins-bold;
+    font-size: 100px;
+    letter-spacing: 5px;
+
+}
+.hero h3{
+    font-family: poppins;
+    font-size: 20px;
+    margin-top: -30px;
+    letter-spacing: 1px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 90px;
+    margin: 2px;
+}
+
+/* Botones debajo de los iconos */
+/* .hero-buttons {
+    display: flex;
+    gap: 10px;
+    background: none;
+} */
+.hero-buttons button {
+    padding: 10px 45px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #1A2E4F;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* imagen chica */
+.hero img.productos {
+    width: 450px;
+    max-width: 50%;
+    height: auto;
+}
+
+
+/* BANNER -seccion dos*/
+.banner img{
+    /* position: relative; */
+    min-height: auto;
+    width:100%;
+    max-width: 100%;
+}
+
+/* franja azul */
+
+.banner__franja{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* revisar el degradadado a ver */
+    background-color: #1E5D92;
+    min-height: 50px;
+    color: #fff;
+    gap: 20px;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: "poppins";
+}
+
+
+.letra{
+    font-family: "poppins";
+    text-transform: none;
+}
+
+/* boton */
+.enlace-btn {
+    min-height: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1A2E4F;
+    padding: 5px 8px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* SERVICIOS -seccion tres */
+.servicios{
+    background: linear-gradient(90deg, #D3E3EA, #B1D4DF );
+    background-size: 100%;
+    /* cambiarlo a dinamico */
+    max-height: 100%;
+    padding: 40px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    ;
+}
+/* titular */
+.servicios__titular{
+    margin: 30px;
+    width: 300px;
+}
+.servicios__titular h2{
+    font-size: 90px; 
+    line-height: 80px;
+    /* margin: 40px; */
+    font-weight: 900; 
+}
+
+.servicios__titular p{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+/* tarjetas de servicios */
+
+/* intentar acomodar en media cuare lo de que se va bajando una por una de las tarjetas de servicio, ligera sospecha de que debo guardar en un div, pero eso cambia propiedades en general */
+.servicios__card{
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* revisar porque no se centran los botones */
+
+
+/* PUBLICIDAD ultima seccion */
+/* .publicidad{
+    display: flex;
+    justify-content: space-around;
+    min-width: 80vh;
+    gap: 25px;
+}
+.publicidad__img{
+    min-width: 300px;
+    width: 50%;
+    max-width: 560px;
+} */
+
+
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    background: #1E5D92;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.iconos_redes{
+    width: 30px;
+}
+.footer_reder{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #fff;
+}
+
+.codigo_footer{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    opacity: 60%;
+}
+
+
+
+
+/* Estilos responsive */
+
+/* MENU */
+
+
+@media (width <= 990px){
+    .publicidad__img{
+        
+    }
+
+}
+@media (max-width: 768px) {
+    .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    }
+
+    .hero-left {
+    max-width: 100%;
+    align-items: center;
+    }
+
+    .hero img.productos {
+    max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+    width: 120px;
+    }
+    .hero-buttons button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    }
+    .hero img.productos {
+    max-width: 90%;
+    }
+    .banner__franja h3{
+    font-size: 9px !important;
+    }
+}
+

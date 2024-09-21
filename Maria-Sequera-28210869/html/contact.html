@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon -->
+        <link rel="icon" type="favicon" href="./img/favicon.webp">
+        <!-- stylos propios -->
+        <link rel="stylesheet" href="../css/contac.css">
+        <link rel="stylesheet" href="./css/fonts.css">
+        <!-- styles booststrap -->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+
+        <!-- MENU -->
+        <header class="header">
+
+            <nav class="navbar navbar-expand-lg" id="nav_bar">
+
+                <div class="container-fluid">
+
+                    <a href="../index.html" class="logo"><img
+                            src="../img/logo-inter.webp" alt="logo-inter"
+                            width="80px"></a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation" id="invertir">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse aling" id="navbarNav">
+
+                        <ul class="navbar-nav" id="blanco">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"
+                                    id="blanco">INICIO</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="./servicios-internet.html"
+                                    id="blanco">SERVICIOS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html"
+                                    id="blanco">NOSOTROS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html"
+                                    id="blanco">CONTACTO</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- CONTENIDO -->
+            <section class="contact">
+                <article class="content">
+                    <header class="contact__titular">
+                        <h1 >comunicate</h1>
+                        <p>con nosotros y gestiona todos <span
+                                class="mayusc">tus servicios</span></p>
+                    </header>
+                    <!-- formulario en si -->
+                    <form action class="content__form">
+                        <input type="username" id="username"
+                            class="content__input"
+                            placeholder="Nombre y apellido"
+                            required>
+
+                        <input type="email" id="email" class="content__input"
+                            placeholder="Email" required>
+
+                        <input type="servicio" id="servicio"
+                            class="content__input"
+                            placeholder="servicio de interes"
+                            required>
+
+                        <!-- sospecho que aqui debio ser un text-area -->
+
+                        <input type="conculta" id="consulta"
+                            class="content__input" placeholder="consulta"
+                            required>
+
+                        <!-- boton -->
+
+                        <input type="submit" name="Enviar" value="Enviar"
+                            id="Enviar" class="content__enviar">
+                    </form>
+                </article>
+            </section>
+
+            <!-- medios de comunicacion -franja azul -->
+            <section class="comunication w-100 " >
+                <!-- cliente inter -->
+                <article class="comunication__img d-flex w-100">
+                    <figure class="comunication__figure w-100">
+                        <img src="../img/c-cliente-inter.webp"
+                            alt="c-cliente-inter" width="50px">
+
+                        <!-- whatsapp y tiendas -->
+                        <img src="../img/c-ws-numero.webp" class="w-25"
+                            alt="c-ws-numero">
+
+                        <img src="../img/c-tiendasinter-texto.webp" class="w-25"
+                            alt="c-tiendasinter-texto">
+                    </figure>
+                </article>
+            </section>
+        </main>
+        <!-- FOOTER -->
+    <footer class="footer d-flex flex-wrap">
+        <a href="https://www.farmatodo.com.ve/" class="logo">
+            <img src="../img/logo-inter.webp" alt="logo" class="logo-footer">
+        </a>
+
+        <span class="codigo_footer">&copy; Corporación Telemic RIF. J-30240664-1. 
+            Ttodos los derechos reservados. 2023</span>
+
+        <figure class="footer_reder">
+            <a href="https://www.instagram.com/tumundointer">
+                <img src="../img/f-instagram-logo.webp" alt="instagram" class="iconos_redes">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100093490105173">
+                <img src="../img/facebook.svg" alt="facebook" width="" class="iconos_redes">
+            </a>
+            <a href="https://twitter.com/farmatodo">
+                <img src="../img/twiter.svg"twitter" class="iconos_redes">
+            </a>
+        
+            <a href="https://www.youtube.com/user/MundoInter"><img src="../img/f-youtube-logo.svg" alt="youtube" class="iconos__redes" width="40px"></a>
+        </figure>
+    </footer>
+        <!-- booststrap jvs -->
+        <script type="text/javascript"
+            src="../bootstrap/js/bootstrap.js"></script>
+    </body>
+
+</html>

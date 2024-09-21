@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('../fonts/Cosmetic/FontsFree-Net-Cosmetic-Bold-2720dac81c9a00b37fd1297c5d555f2f.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HEADER */
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 90px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li a{
+color: white;
+font-family: Montserrat SemiBold;
+font-size: 14pt;
+}
+
+.menu .navbar ul li a:hover{
+    color:#009b54;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    font-family: 'Montserrat';
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px;
+    background: url(../img/jpg/HERO-FONDO.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    width: 100%;
+}
+
+
+.titulos1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: -100px;
+}
+
+
+.s1t h1 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    max-width: 700px;
+    
+}
+
+.s1t p {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.s2t h3 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;   
+}
+
+.s2t p {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    max-width: 450px;
+}
+
+.buy-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 100px;
+    background-color: #009b54;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14pt; 
+    margin-top: 30px;
+}
+
+
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 15px;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.titulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cosmetic;
+    font-size: 48pt;
+    color: #04372e;
+    line-height: 1;
+    min-height: 150px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.titulo2 h2 {
+    font-family: Cosmetic;
+    font-size: 48pt;
+    color: #04372e;
+    line-height: 1;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    gap: 60px;
+}
+
+.pelist {
+    background-color: #fff;
+    border: 2px solid #04372e;
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 40px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.pelist:hover {
+    transform: scale(1.05);
+    height: 480px;
+}
+
+.pelist h3 {
+    font-size: 15px;
+    color: #04372e;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-family: Montserrat Bold;
+    font-size: 18pt;
+    
+}
+
+.pelist img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1;
+    width: auto;
+    height: 300px;
+}
+
+.P3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pelist p {
+    color: #04372e;
+    font-size: 12pt;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+
+.buy-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #009b54;
+    color: #fff;
+    font-family: Montserrat Bold;
+    padding: 8px 0px;
+    border: none;
+    display: none;
+    position: relative;
+    width: 40%;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+   
+}
+
+.pelist:hover .buy-btn  {
+    display: block;
+}
+
+
+.seccion3 {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    background: url(../img/jpg/Fondo-seccion-3.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    width: 100%;
+}
+
+.Ver {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: transparent;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14pt; 
+    margin-top: 30px;
+}
+
+.seccion4 {
+    margin: 0px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 100px;
+    background: url(../img/jpg/Fondo-seccion-4.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+}
+
+.s4t h3 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: -30px;
+    max-width: 800px;
+}
+
+.s4t {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.s4t p {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    max-width: 500px;   
+}
+
+.clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.cliente {
+    display: flex;
+    border: 2px solid #04372e;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.cliente img {
+    display: flex;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.text2 h2{
+    font-family: Montserrat Bold;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    color: #04372e;
+}
+
+.text1 h2{
+    font-family: Montserrat Bold;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    color: #04372e;
+}
+
+.text2 p{
+    font-family: Montserrat;
+    font-size: 12pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    color: #04372e;
+}
+
+.text1 p{
+    font-family: Montserrat;
+    font-size: 12pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    color: #04372e;
+}
+
+.seccion5 {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    background: url(../img/jpg/Fondo-seccion-5.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+.s5t h3 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: -30px;
+    
+}
+
+.s5t p {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.titulos5 {
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.Contacto {
+    text-align: center;
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: transparent;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14pt; 
+    margin-top: 30px;
+    font-family: Montserrat Bold;
+}
+
+footer {
+    background-color: #009b54; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer-content p {
+    font-family: Montserrat;
+    font-size: 12pt;
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px; /* Espaciado inferior del logo */
+}
+
+.icons {
+    display: flex; /* Usar flexbox para los íconos */
+    justify-content: center; /* Centra los íconos */
+    margin-bottom: 10px; /* Espaciado inferior de los íconos */
+}
+
+.icons img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    margin: 0 10px; /* Espaciado entre íconos */
+}
+
+@media(max-width:970px) {
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        background-color: #04372e;
+        padding: 15px;
+        top: 109px;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 1000;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+@media(max-width:720px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .s1t h1 {
+        font-size: 40pt;
+        line-height: 1.2;
+        max-width: 700px;
+    }
+
+    .s1t {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo2 h2{
+        font-size: 40pt;
+        line-height: 1.2;
+        max-width: 700px;
+    }
+    .s2t h3 {
+        font-family: Cosmetic;
+        color: white;
+        font-size: 40pt;
+        line-height: 1.2;   
+        max-width: 310px;
+    }
+    
+    .s2t {
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .s2t p {
+        font-family: Montserrat;
+        color: white;
+        font-size: 14pt;
+        line-height: 1.2;
+        margin-top: 30px;
+        max-width: 310px;
+    }
+
+    .seccion3 {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion4 {
+        padding: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s4t h3 {
+        font-family: Cosmetic;
+        color: white;
+        font-size: 36pt;
+        line-height: 1.2;   
+        max-width: 400px;
+        margin-top: 40px;
+    }
+
+    .seccion5 {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cliente{
+        min-height: 200px;
+        height: auto;
+    }
+
+    .s5t h3{ 
+        font-family: Cosmetic;
+        color: white;
+        font-size: 36pt;
+        line-height: 1.2;   
+        max-width: 400px;
+        margin-top: 40px;
+    }
+
+    .s5t {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        background: url(../img/jpg/Hero-fondo-responsive.jpg);
+        background-size: cover;
+    }
+}
+
+@media(max-width:402px) {
+
+    .menu{
+        padding: 0px;
+    }
+
+
+    .text2 p{
+        margin-top: 10px;
+    }
+
+}

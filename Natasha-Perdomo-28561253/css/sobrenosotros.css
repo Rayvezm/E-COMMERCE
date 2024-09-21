@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('../fonts/Cosmetic/FontsFree-Net-Cosmetic-Bold-2720dac81c9a00b37fd1297c5d555f2f.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/*  HEADER */
+
+.fondo{
+    height: 100px;
+    padding: 0 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 90px;
+    height: 100px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li a{
+color: #04372e;
+font-family: Montserrat SemiBold;
+font-size: 14pt;
+}
+
+.menu .navbar ul li a:hover{
+    color:#009b54;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.section1 {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px;
+    background: url(../img/jpg/Fondo-sobrenosotros.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.st1 h3 {
+    font-family: Cosmetic;
+    color: #04372e;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: 100px;
+    
+}
+
+.st1 p {
+    max-width: 600px;
+    font-family: Montserrat;
+    color: #04372e;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+
+.st1 {
+    margin-right: 100px;
+    position: relative;
+}
+
+.section2 {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    background: url(../img/jpg/Fondo-sobrenosotros2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.st2 h3 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: 100px;
+    
+}
+
+.st2 p {
+    max-width: 700px;
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.st3 h3 {
+    font-family: Cosmetic;
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: 100px;
+    
+}
+
+.st3 p {
+    max-width: 700px;
+    font-family: Montserrat;
+    color: white;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.title2 {
+    margin-top: -100px;
+}
+
+.section3 {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    background-color: #ffffff;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.st4 h3 {
+    font-family: Cosmetic;
+    color: #04372e;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-top: 100px;
+    
+}
+
+.st4 p {
+    max-width: 700px;
+    font-family: Montserrat;
+    color: #04372e;
+    font-size: 14pt;
+    line-height: 1.2;
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 20px
+}
+
+strong {
+    font-family: Montserrat Bold;
+    color: #04372e;
+}
+
+footer {
+    background-color: #009b54; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer-content p {
+    font-family: Montserrat;
+    font-size: 12pt;
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px; /* Espaciado inferior del logo */
+}
+
+.icons {
+    display: flex; /* Usar flexbox para los íconos */
+    justify-content: center; /* Centra los íconos */
+    margin-bottom: 10px; /* Espaciado inferior de los íconos */
+}
+
+.icons img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    margin: 0 10px; /* Espaciado entre íconos */
+}
+
+@media(max-width:1500px) {
+
+    .st1 {
+        margin-right: 80px;
+    }
+
+}
+
+@media(max-width:1400px) {
+
+    .st1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    .st1 p{
+        max-width: 400px;
+    }
+
+}
+
+@media(max-width:1100px) {
+
+    .st1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width:1100px) {
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffff;
+    }
+
+    .st1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width:970px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar ul li a{
+        color: #04372e;
+        font-family: Montserrat SemiBold;
+        font-size: 14pt;
+        }
+
+    .menu .navbar{
+        position: absolute;
+        background-color: #04372e;
+        padding: 15px;
+        top: 109px;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 1000;
+    }
+    
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu .navbar ul li a{
+        color: white;
+        font-family: Montserrat SemiBold;
+        font-size: 14pt;
+        }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+}

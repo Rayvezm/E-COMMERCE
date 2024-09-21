@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('../fonts/Cosmetic/FontsFree-Net-Cosmetic-Bold-2720dac81c9a00b37fd1297c5d555f2f.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  HEADER */
+
+.fondo{
+    height: 100px;
+    padding: 0 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 90px;
+    height: 100px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+.menu .navbar ul li{
+    display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px;  
+}
+
+.menu .navbar ul li:hover{
+    transform: scale(1.1)
+}
+
+.menu .navbar ul li a{
+color: #04372e;
+font-family: Montserrat SemiBold;
+font-size: 14pt;
+}
+
+.menu .navbar ul li a:hover{
+    color:#009b54;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 15px;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.titulo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cosmetic;
+    font-size: 48pt;
+    color: #04372e;
+    line-height: 1;
+    min-height: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo2 h2 {
+    font-family: Cosmetic;
+    font-size: 48pt;
+    color: #04372e;
+    line-height: 1;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    gap: 60px;
+}
+
+.pelist {
+    background-color: #fff;
+    border: 2px solid #04372e;
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 40px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.pelist:hover {
+    transform: scale(1.05);
+    height: 480px;
+}
+
+.pelist h3 {
+    font-size: 15px;
+    color: #04372e;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-family: Montserrat Bold;
+    font-size: 18pt;
+    
+}
+
+.pelist img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1;
+    width: auto;
+    height: 300px;
+}
+
+.P3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pelist p {
+    color: #04372e;
+    font-size: 12pt;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+
+.buy-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #009b54;
+    color: #fff;
+    font-family: Montserrat Bold;
+    padding: 8px 0px;
+    border: none;
+    display: none;
+    position: relative;
+    width: 40%;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+   
+}
+
+.pelist:hover .buy-btn  {
+    display: block;
+}
+
+.seccion3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    min-height: 400px;
+}
+
+.kt1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 370px;
+    max-height: 293px;
+    padding: 60px;
+    background: url('../img/jpg/img-oficina.jpg');
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.kt1 h3{
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-size: 14pt;
+    max-width: 200px;
+}
+
+.kt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 370px;
+    max-height: 293px;
+    padding: 60px;
+    background: url('../img/jpg/img-maletines.jpg');
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.kt2 h3{
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-size: 14pt;
+    max-width: 200px;
+}
+
+.kt3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 370px;
+    max-height: 293px;
+    padding: 60px;
+    background: url('../img/jpg/img-tecnologia.jpg');
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.kt3 h3 {
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-size: 14pt;
+    max-width: 200px;
+}
+
+footer {
+    background-color: #009b54; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.footer-content p {
+    font-family: Montserrat;
+    font-size: 12pt;
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px; /* Espaciado inferior del logo */
+}
+
+.icons {
+    display: flex; /* Usar flexbox para los íconos */
+    justify-content: center; /* Centra los íconos */
+    margin-bottom: 10px; /* Espaciado inferior de los íconos */
+}
+
+.icons img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    margin: 0 10px; /* Espaciado entre íconos */
+}
+
+@media(max-width:720px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        padding: 15px;
+        top: 60;
+        left: 0;
+        right: 0;
+        background-color: #04372e;
+        display: none;
+        z-index: 1000;
+    }
+
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .menu .navbar ul li a{
+        color: white;
+        font-family: Montserrat SemiBold;
+        font-size: 14pt;
+        }
+
+    .titulo2 h2 {
+        font-family: Cosmetic;
+        font-size: 36pt;
+        color: #04372e;
+        line-height: 1;
+        max-width: 800px;
+        margin-top: 100px;
+        }
+
+    .seccion3 {
+        min-height: 720px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}

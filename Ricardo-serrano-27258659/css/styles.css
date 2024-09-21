@@ -120,7 +120,7 @@ span {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    background-image: url("/img/webp/fondo_index.webp");
+    background-image: url("../img/webp/fondo_index.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -381,7 +381,7 @@ h6 {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    background-image: url("/img/webp/fondo_4.webp");
+    background-image: url("../img/webp/fondo_4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -632,7 +632,4 @@ a , li {
         width: 100%;
     }
 
-    .iconos_footer{
-        width: 20px;
-    }
 }

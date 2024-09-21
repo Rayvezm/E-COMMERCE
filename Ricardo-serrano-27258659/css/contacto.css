@@ -182,14 +182,17 @@ span {
 
 .enviar{
     display: flex;
-    width: 50%;
-    padding: 10px 10px;
-    justify-content: start;
-    align-items: start;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: montserrat;
     font-weight: 900;
     font-style: italic;
     background-color: #383838;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-bottom-left-radius: 30px;
     color: #ececec;
     border: none;
