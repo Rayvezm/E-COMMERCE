@@ -66,14 +66,13 @@
 }
 .principal__text{
     background-position: center;
-    min-width: 300px;
+    min-width: 340px;
     width: 50%;
     max-width: 560px;
 }
 
 .text__content{
-    margin: 40px;
-    gap: 50px;
+    margin: 40px 0;
 }
 
 .text__content h2{
